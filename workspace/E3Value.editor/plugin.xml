@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated e3value -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="e3Value.presentation.E3ValueModelWizardID"
+            name="%_UI_E3ValueModelWizard_label"
+            class="e3Value.presentation.E3ValueModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/E3ValueModelFile.gif">
+         <description>%_UI_E3ValueModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated e3value -->
+      <editor
+            id="e3Value.presentation.E3ValueEditorID"
+            name="%_UI_E3ValueEditor_label"
+            icon="icons/full/obj16/E3ValueModelFile.gif"
+            extensions="e3value"
+            class="e3Value.presentation.E3ValueEditor"
+            contributorClass="e3Value.presentation.E3ValueActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

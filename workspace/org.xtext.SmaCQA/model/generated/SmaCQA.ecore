@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="smaCQA" nsURI="http://www.xtext.org/SmaCQA" nsPrefix="smaCQA">
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="valueExchanges" upperBound="-1"
+        eType="#//ValueExchange" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValueExchange">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actorSend" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actorReceipt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valueObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataQuestion" eType="#//DataQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="legalQuestion" eType="#//LegalQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="economyQuestion" eType="#//EconomyQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentQuestion" eType="#//ShipmentQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="insuranceQuestion" eType="#//InsuranceQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alimentaryQuestion" eType="#//AlimentaryQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="timeDurationValueExchange"
+        eType="#//TimeValueExchangeDurationQuestion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="timeStartValueExchange"
+        eType="#//TimeStartValueExchangeQuestion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="repeatValueExchange" eType="#//RepeatValueExchangeQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conditionValueExchange"
+        eType="#//ConditionsValueExchangeQuestion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="valueObjectTypeValueExchange"
+        eType="#//ValueObjectQuestion" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShipmentQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentDetails" eType="#//ShipmentDetailsQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sanitaryControl" eType="#//SanitaryControlQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customs" eType="#//CustomsQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="importTax" eType="#//ImportTaxQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geographicalQuestion" eType="#//GeographicalQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="addressPickup" eType="#//AddressPickupQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="addressDelivery" eType="#//AddressDeliveryQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentTrackingNumber"
+        eType="#//ShipmentTrackingNumberQuestion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dangerousLoad" eType="#//DangerousLoadQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="perishable" eType="#//PerishableQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cargoType" eType="#//CargoTypeQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cargoWeight" eType="#//CargoWeightQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cargoDimensions" eType="#//CargoDimensionsQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seaShipment" eType="#//SeaShipmentQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="means" eType="#//MeansTransportQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="company" eType="#//CompanyQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deliveryDeadline" eType="#//DeliveryDeadlineQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="updatesAndMonitoring" eType="#//UpdatesAndMonitoringQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalMediator" eType="#//ExternalMediatorQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InsuranceQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentInsurance" eType="#//ShipmentInsuranceQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="insuranceDetails" eType="#//InsuranceDetailsQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="returnsOrCancellations"
+        eType="#//ReturnsOrCancellationsQuestion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="penaltyForNeglect" eType="#//PenaltyForNeglectQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AlimentaryQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="agreedPrice" eType="#//AgreedPriceQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="productQuality" eType="#//ProductQualityQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internationalSeal" eType="#//InternationalSealQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="healthInspection" eType="#//HealthInspectionQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="storageConditions" eType="#//StorageConditionsQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValueObjectQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValueObjectRightQuestion" eSuperTypes="#//ValueObjectQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValueObjectTokenQuestion" eSuperTypes="#//ValueObjectQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answer" eType="#//Token"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValueObjectTangibleQuestion" eSuperTypes="#//ValueObjectQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answer" upperBound="-1"
+        eType="#//DataRegister" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Type">
+    <eLiterals name="Number" literal="Number"/>
+    <eLiterals name="Text" value="1" literal="Text"/>
+    <eLiterals name="TrueOrFalse" value="2" literal="TrueOrFalse"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="UnitTime">
+    <eLiterals name="minutes" literal="minutes"/>
+    <eLiterals name="days" value="1" literal="days"/>
+    <eLiterals name="weeks" value="2" literal="weeks"/>
+    <eLiterals name="years" value="3" literal="years"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="UnitCoin">
+    <eLiterals name="ether" literal="ether"/>
+    <eLiterals name="wei" value="1" literal="wei"/>
+    <eLiterals name="pwei" value="2" literal="pwei"/>
+    <eLiterals name="gwei" value="3" literal="gwei"/>
+    <eLiterals name="szabo" value="4" literal="szabo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Voyagetype">
+    <eLiterals name="time" literal="time"/>
+    <eLiterals name="voyage" value="1" literal="voyage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="inspectionResult">
+    <eLiterals name="favorable" literal="favorable"/>
+    <eLiterals name="unfavorable" value="1" literal="unfavorable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Participants">
+    <eLiterals name="actorSend" literal="actorSend"/>
+    <eLiterals name="actorReceipt" value="1" literal="actorReceipt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataRegister">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//Type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Token">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="symbol" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="supply" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerMintSentence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerBurnSentence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TokenERC20" eSuperTypes="#//Token">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decimals" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TokenERC223" eSuperTypes="#//Token">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="decimals" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TokenERC721" eSuperTypes="#//Token">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitCoin" eType="#//UnitCoin"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerMetadataSentence"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="answer" upperBound="-1"
+        eType="#//DataRegister" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TimeValueExchangeDurationQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitTime" eType="#//UnitTime"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TimeStartValueExchangeQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitTime" eType="#//UnitTime"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RepeatValueExchangeQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConditionsValueExchangeQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LegalQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ageQuestion" eType="#//AgeQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="taxQuestion" eType="#//TaxQuestion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="additionalLegalDocument"
+        eType="#//AdditionalLegalDocumentQuestion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regulatoryCompliance" eType="#//RegulatoryComplianceQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AgeQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TaxQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subSentence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerSubSentence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AdditionalLegalDocumentQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RegulatoryComplianceQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EconomyQuestion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="minimumAmountQuestion"
+        eType="#//MinimumAmountQuestion" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentCostResponsibility"
+        eType="#//ShipmentCostResponsibilityQuestion" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MinimumAmountQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShipmentCostResponsibilityQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitCoinFreightRate"
+        eType="#//UnitCoin"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="loadingFeeAnswerUnitCoin"
+        eType="#//UnitCoin"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q4" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer4" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unloadingFeeAnswerUnitCoin"
+        eType="#//UnitCoin"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q5" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer5" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transportRateAnswerUnitCoin"
+        eType="#//UnitCoin"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShipmentDetailsQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SanitaryControlQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CustomsQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ImportTaxQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSentence" eType="#//TaxShipmentDetailsQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TaxShipmentDetailsQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitCoin" eType="#//UnitCoin"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GeographicalQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSentenceRestriction"
+        eType="#//GeographicalRestrictionQuestion" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GeographicalRestrictionQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AddressPickupQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AddressDeliveryQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShipmentTrackingNumberQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DangerousLoadQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSentenceSpecialMeasures"
+        eType="#//SpecialMeasuresQuestion" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecialMeasuresQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PerishableQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSentencePerishable"
+        eType="#//ExpirationDateQuestion" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExpirationDateQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CargoTypeQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CargoWeightQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CargoDimensionsQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="depth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SeaShipmentQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="maritime" eType="#//MaritimeQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaritimeQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q4" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer4" eType="#//Voyagetype"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSentence" eType="#//VoyageQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VoyageQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerSubSentence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitTime" eType="#//UnitTime"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MeansTransportQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompanyQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeliveryDeadlineQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UpdatesAndMonitoringQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalMediatorQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subsentence" eType="#//MediatorNameQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MediatorNameQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShipmentInsuranceQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InsuranceDetailsQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitCoin1" eType="#//UnitCoin"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitCoin3" eType="#//UnitCoin"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReturnsOrCancellationsQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subsentence" eType="#//ReturnsManagementQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReturnsManagementQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PenaltyForNeglectQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AgreedPriceQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answerUnitCoin" eType="#//UnitCoin"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductQualityQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expectedQuality" eType="#//ExpectedQualityQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExpectedQualityQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="q2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InternationalSealQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subsentence" eType="#//InternacionalSealNameQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InternacionalSealNameQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HealthInspectionQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subsentence" eType="#//InspectionResultQuestion"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InspectionResultQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="#//inspectionResult"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StorageConditionsQuestion">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="answer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

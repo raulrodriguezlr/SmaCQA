@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:e3Value="http://www.example.org/e3Value" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_h1GRkL-bEe6nlJ2WOx-LmA" selectedViews="_ZbS4kL-cEe6nlJ2WOx-LmA" version="14.3.1.202003261200">
+    <semanticResources>maritimeSC.e3value</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_ZbS4kL-cEe6nlJ2WOx-LmA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Zbvkgb-cEe6nlJ2WOx-LmA" name="MaritimeChain" repPath="#_ZbcpkL-cEe6nlJ2WOx-LmA" changeId="9cd22286-0740-49e2-975a-5eb87fb667c4">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']"/>
+        <target xmi:type="e3Value:E3ValueDiagram" href="maritimeSC.e3value#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_ZbcpkL-cEe6nlJ2WOx-LmA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ZcCfcL-cEe6nlJ2WOx-LmA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_ZcCfcb-cEe6nlJ2WOx-LmA" type="Sirius" element="_ZbcpkL-cEe6nlJ2WOx-LmA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_q-GA8L-cEe6nlJ2WOx-LmA" type="2002" element="_q9zGAL-cEe6nlJ2WOx-LmA">
+          <children xmi:type="notation:Node" xmi:id="_q-Px8L-cEe6nlJ2WOx-LmA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_q-Px8b-cEe6nlJ2WOx-LmA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_4J2Qlb-cEe6nlJ2WOx-LmA" type="3008" element="_4J2Qkr-cEe6nlJ2WOx-LmA">
+              <children xmi:type="notation:Node" xmi:id="_4J2QmL-cEe6nlJ2WOx-LmA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_4J_agL-cEe6nlJ2WOx-LmA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_Gdor88E1Ee6ddObUARUAIQ" type="3008" element="_Gdor8ME1Ee6ddObUARUAIQ">
+                  <children xmi:type="notation:Node" xmi:id="_Gdor9sE1Ee6ddObUARUAIQ" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_Gdor98E1Ee6ddObUARUAIQ" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_1IcX8cHHEe6ddObUARUAIQ" type="3007" element="_1IcX6sHHEe6ddObUARUAIQ">
+                      <children xmi:type="notation:Node" xmi:id="_1IcX9MHHEe6ddObUARUAIQ" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_1IcX9cHHEe6ddObUARUAIQ" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_1IcX9sHHEe6ddObUARUAIQ" type="3005" element="_1IcX68HHEe6ddObUARUAIQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_1IcX98HHEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1IcX-MHHEe6ddObUARUAIQ"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_1IcX8sHHEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1IcX88HHEe6ddObUARUAIQ" x="5" y="9" width="20" height="30"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_yQ1KMMHKEe6ddObUARUAIQ" type="3007" element="_yQsAUsHKEe6ddObUARUAIQ">
+                      <children xmi:type="notation:Node" xmi:id="_yQ1KM8HKEe6ddObUARUAIQ" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_yQ1KNMHKEe6ddObUARUAIQ" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_yQ1KNcHKEe6ddObUARUAIQ" type="3005" element="_yQsAU8HKEe6ddObUARUAIQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_yQ1KNsHKEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQ1KN8HKEe6ddObUARUAIQ"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_yQ1KMcHKEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQ1KMsHKEe6ddObUARUAIQ" x="40" y="24" width="15" height="21"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_Gdor-ME1Ee6ddObUARUAIQ"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_Gdor-cE1Ee6ddObUARUAIQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_Gdor9ME1Ee6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gdor9cE1Ee6ddObUARUAIQ" x="106" y="120" width="78" height="68"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_4J_agb-cEe6nlJ2WOx-LmA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_4J_agr-cEe6nlJ2WOx-LmA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_4J2Qlr-cEe6nlJ2WOx-LmA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4J2Ql7-cEe6nlJ2WOx-LmA" x="15" y="64" width="336" height="216"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_KLGRkME0Ee6ddObUARUAIQ" type="3008" element="_KK8glME0Ee6ddObUARUAIQ">
+              <children xmi:type="notation:Node" xmi:id="_KLQCkME0Ee6ddObUARUAIQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_KLQCkcE0Ee6ddObUARUAIQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_KsPF8MHHEe6ddObUARUAIQ" type="3007" element="_KsFVAsHHEe6ddObUARUAIQ">
+                  <children xmi:type="notation:Node" xmi:id="_KsPF88HHEe6ddObUARUAIQ" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_KsPF9MHHEe6ddObUARUAIQ" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_KsPF9cHHEe6ddObUARUAIQ" type="3005" element="_KsFVA8HHEe6ddObUARUAIQ">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_KsPF9sHHEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KsPF98HHEe6ddObUARUAIQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_KsPF8cHHEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KsPF8sHHEe6ddObUARUAIQ" x="61" y="150" width="23" height="23"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_QfmLx8HHEe6ddObUARUAIQ" type="3008" element="_QfmLwsHHEe6ddObUARUAIQ">
+                  <children xmi:type="notation:Node" xmi:id="_QfmLysHHEe6ddObUARUAIQ" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_QfmLy8HHEe6ddObUARUAIQ" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_2MFmMMHHEe6ddObUARUAIQ" type="3007" element="_2L8cWMHHEe6ddObUARUAIQ">
+                      <children xmi:type="notation:Node" xmi:id="_2MFmM8HHEe6ddObUARUAIQ" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_2MFmNMHHEe6ddObUARUAIQ" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_2MFmNcHHEe6ddObUARUAIQ" type="3005" element="_2L8cWcHHEe6ddObUARUAIQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_2MFmNsHHEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2MFmN8HHEe6ddObUARUAIQ"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_2MFmMcHHEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2MFmMsHHEe6ddObUARUAIQ" x="35" width="15" height="21"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_3nd_HsHHEe6ddObUARUAIQ" type="3007" element="_3nd_GcHHEe6ddObUARUAIQ">
+                      <children xmi:type="notation:Node" xmi:id="_3nd_IcHHEe6ddObUARUAIQ" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_3nd_IsHHEe6ddObUARUAIQ" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_3nd_I8HHEe6ddObUARUAIQ" type="3005" element="_3nd_GsHHEe6ddObUARUAIQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_3nd_JMHHEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nd_JcHHEe6ddObUARUAIQ"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_3nd_H8HHEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3nd_IMHHEe6ddObUARUAIQ" x="36" y="44" width="13" height="13"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_9PDdTcHIEe6ddObUARUAIQ" type="3007" element="_9PDdPsHIEe6ddObUARUAIQ">
+                      <children xmi:type="notation:Node" xmi:id="_9PDdUMHIEe6ddObUARUAIQ" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_9PDdUcHIEe6ddObUARUAIQ" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_9PDdUsHIEe6ddObUARUAIQ" type="3005" element="_9PDdP8HIEe6ddObUARUAIQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_9PDdU8HIEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9PDdVMHIEe6ddObUARUAIQ"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_9PDdTsHIEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9PDdT8HIEe6ddObUARUAIQ" x="75" y="-20" width="15" height="21"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_QfmLzMHHEe6ddObUARUAIQ"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_QfmLzcHHEe6ddObUARUAIQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_QfmLyMHHEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QfmLycHHEe6ddObUARUAIQ" x="26" y="35"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_KLQCksE0Ee6ddObUARUAIQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_KLQCk8E0Ee6ddObUARUAIQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_KLGRkcE0Ee6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KLGRksE0Ee6ddObUARUAIQ" x="55" y="394" height="200"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qKdKKcE0Ee6ddObUARUAIQ" type="3008" element="_qKTZIsE0Ee6ddObUARUAIQ">
+              <children xmi:type="notation:Node" xmi:id="_qKdKLME0Ee6ddObUARUAIQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_qKdKLcE0Ee6ddObUARUAIQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_qKdKLsE0Ee6ddObUARUAIQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_qKdKL8E0Ee6ddObUARUAIQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_qKdKKsE0Ee6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qKdKK8E0Ee6ddObUARUAIQ" x="790" y="459"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_tA_SYME0Ee6ddObUARUAIQ" type="3008" element="_tA1hZME0Ee6ddObUARUAIQ">
+              <children xmi:type="notation:Node" xmi:id="_tA_SY8E0Ee6ddObUARUAIQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_tA_SZME0Ee6ddObUARUAIQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_tA_SZcE0Ee6ddObUARUAIQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_tA_SZsE0Ee6ddObUARUAIQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_tA_SYcE0Ee6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tA_SYsE0Ee6ddObUARUAIQ" x="815" y="274"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_xy5iN8E0Ee6ddObUARUAIQ" type="3008" element="_xyvxNsE0Ee6ddObUARUAIQ">
+              <children xmi:type="notation:Node" xmi:id="_xy5iOsE0Ee6ddObUARUAIQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_xy5iO8E0Ee6ddObUARUAIQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_xy5iPME0Ee6ddObUARUAIQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_xy5iPcE0Ee6ddObUARUAIQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_xy5iOME0Ee6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xy5iOcE0Ee6ddObUARUAIQ" x="370" y="274"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_zw9KX8E0Ee6ddObUARUAIQ" type="3008" element="_zw9KWME0Ee6ddObUARUAIQ">
+              <children xmi:type="notation:Node" xmi:id="_zw9KYsE0Ee6ddObUARUAIQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_zw9KY8E0Ee6ddObUARUAIQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_E7QTIME1Ee6ddObUARUAIQ" type="3008" element="_E7HJOsE1Ee6ddObUARUAIQ">
+                  <children xmi:type="notation:Node" xmi:id="_E7QTI8E1Ee6ddObUARUAIQ" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_E7QTJME1Ee6ddObUARUAIQ" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_E7QTJcE1Ee6ddObUARUAIQ"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_E7QTJsE1Ee6ddObUARUAIQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_E7QTIcE1Ee6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E7QTIsE1Ee6ddObUARUAIQ" x="116" y="25"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_zw9KZME0Ee6ddObUARUAIQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_zw9KZcE0Ee6ddObUARUAIQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_zw9KYME0Ee6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zw9KYcE0Ee6ddObUARUAIQ" x="799" y="74"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_1GUwoMHKEe6ddObUARUAIQ" type="3007" element="_1GK_wMHKEe6ddObUARUAIQ">
+              <children xmi:type="notation:Node" xmi:id="_1GUwo8HKEe6ddObUARUAIQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_1GUwpMHKEe6ddObUARUAIQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_1GUwpcHKEe6ddObUARUAIQ" type="3005" element="_1GK_wcHKEe6ddObUARUAIQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_1GUwpsHKEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1GUwp8HKEe6ddObUARUAIQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_1GUwocHKEe6ddObUARUAIQ" fontName="Segoe UI" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1GUwosHKEe6ddObUARUAIQ" x="186" y="319" width="131" height="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_EJktlcHLEe6ddObUARUAIQ" type="3007" element="_EJktgsHLEe6ddObUARUAIQ">
+              <children xmi:type="notation:Node" xmi:id="_EJktmMHLEe6ddObUARUAIQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_EJt3UMHLEe6ddObUARUAIQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_EJt3UcHLEe6ddObUARUAIQ" type="3005" element="_EJktg8HLEe6ddObUARUAIQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_EJt3UsHLEe6ddObUARUAIQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EJt3U8HLEe6ddObUARUAIQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_EJktlsHLEe6ddObUARUAIQ" fontName="Segoe UI" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EJktl8HLEe6ddObUARUAIQ" x="50" y="327" width="66" height="20"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_q-Px8r-cEe6nlJ2WOx-LmA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_q-Px87-cEe6nlJ2WOx-LmA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_q-GA8b-cEe6nlJ2WOx-LmA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q-GA8r-cEe6nlJ2WOx-LmA" x="30" y="5" width="1173" height="633"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_ZcCfcr-cEe6nlJ2WOx-LmA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_FgHw9MHIEe6ddObUARUAIQ" type="4001" element="_FfrFBMHIEe6ddObUARUAIQ" source="_1IcX8cHHEe6ddObUARUAIQ" target="_2MFmMMHHEe6ddObUARUAIQ">
+          <children xmi:type="notation:Node" xmi:id="_FgHw-MHIEe6ddObUARUAIQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FgHw-cHIEe6ddObUARUAIQ" x="-5" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FgHw-sHIEe6ddObUARUAIQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FgHw-8HIEe6ddObUARUAIQ" x="-4" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FgHw_MHIEe6ddObUARUAIQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FgHw_cHIEe6ddObUARUAIQ" x="-3" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_FgHw9cHIEe6ddObUARUAIQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_FgHw9sHIEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FgHw98HIEe6ddObUARUAIQ" points="[-1, 7, 14, -236]$[-15, 233, 0, -10]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FgHw_sHIEe6ddObUARUAIQ" id="(0.6084592571670667,0.7724458204334365)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FgHw_8HIEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_eZuc4MHKEe6ddObUARUAIQ" type="4001" element="_eYPPIMHKEe6ddObUARUAIQ" source="_3nd_HsHHEe6ddObUARUAIQ" target="_KsPF8MHHEe6ddObUARUAIQ">
+          <children xmi:type="notation:Node" xmi:id="_eZuc5MHKEe6ddObUARUAIQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eZuc5cHKEe6ddObUARUAIQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_eZuc5sHKEe6ddObUARUAIQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eZuc58HKEe6ddObUARUAIQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_eZuc6MHKEe6ddObUARUAIQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eZuc6cHKEe6ddObUARUAIQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_eZuc4cHKEe6ddObUARUAIQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_eZuc4sHKEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eZuc48HKEe6ddObUARUAIQ" points="[0, 0, 1, -71]$[-1, 71, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eZuc6sHKEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eZuc68HKEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zl6t_MHKEe6ddObUARUAIQ" type="4001" element="_zlw81MHKEe6ddObUARUAIQ" source="_yQ1KMMHKEe6ddObUARUAIQ" target="_9PDdTcHIEe6ddObUARUAIQ">
+          <children xmi:type="notation:Node" xmi:id="_zmD3wMHKEe6ddObUARUAIQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zmD3wcHKEe6ddObUARUAIQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zmD3wsHKEe6ddObUARUAIQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zmD3w8HKEe6ddObUARUAIQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zmD3xMHKEe6ddObUARUAIQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zmD3xcHKEe6ddObUARUAIQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zl6t_cHKEe6ddObUARUAIQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zl6t_sHKEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zl6t_8HKEe6ddObUARUAIQ" points="[0, 0, 5, -201]$[-5, 201, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zmD3xsHKEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zmD3x8HKEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_BZE7zcHLEe6ddObUARUAIQ" type="4001" element="_BZE7yMHLEe6ddObUARUAIQ" source="_1GUwoMHKEe6ddObUARUAIQ" target="_zl6t_MHKEe6ddObUARUAIQ">
+          <children xmi:type="notation:Node" xmi:id="_BZE70cHLEe6ddObUARUAIQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BZE70sHLEe6ddObUARUAIQ" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_BZE708HLEe6ddObUARUAIQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BZE71MHLEe6ddObUARUAIQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_BZE71cHLEe6ddObUARUAIQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BZE71sHLEe6ddObUARUAIQ" y="-11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_BZE7zsHLEe6ddObUARUAIQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_BZE7z8HLEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BZE70MHLEe6ddObUARUAIQ" points="[-65, 3, 14, -1]$[-63, 3, 16, -1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BZE718HLEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BZE72MHLEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Im7Cn8HLEe6ddObUARUAIQ" type="4001" element="_Im7CmsHLEe6ddObUARUAIQ" source="_EJktlcHLEe6ddObUARUAIQ" target="_FgHw9MHIEe6ddObUARUAIQ">
+          <children xmi:type="notation:Node" xmi:id="_Im7Co8HLEe6ddObUARUAIQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Im7CpMHLEe6ddObUARUAIQ" x="-4" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Im7CpcHLEe6ddObUARUAIQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Im7CpsHLEe6ddObUARUAIQ" x="4" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Im7Cp8HLEe6ddObUARUAIQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Im7CqMHLEe6ddObUARUAIQ" x="4" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Im7CoMHLEe6ddObUARUAIQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Im7CocHLEe6ddObUARUAIQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Im7CosHLEe6ddObUARUAIQ" points="[33, 2, -24, -3]$[35, 3, -22, -2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Im7CqcHLEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Im7CqsHLEe6ddObUARUAIQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ZcMQcL-cEe6nlJ2WOx-LmA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_ZcMQcb-cEe6nlJ2WOx-LmA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_q9zGAL-cEe6nlJ2WOx-LmA">
+      <target xmi:type="e3Value:E3ValueModel" href="maritimeSC.e3value#//@hasE3ValueModels.0"/>
+      <semanticElements xmi:type="e3Value:E3ValueModel" href="maritimeSC.e3value#//@hasE3ValueModels.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_q9zGAb-cEe6nlJ2WOx-LmA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_4J2Qkr-cEe6nlJ2WOx-LmA" name="Decentralized Platform">
+        <target xmi:type="e3Value:ElementaryActor" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0"/>
+        <semanticElements xmi:type="e3Value:ElementaryActor" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4J2Qk7-cEe6nlJ2WOx-LmA" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/ElementaryActor.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Gdor8ME1Ee6ddObUARUAIQ">
+          <target xmi:type="e3Value:ValueInterface" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0"/>
+          <semanticElements xmi:type="e3Value:ValueInterface" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Gdor8cE1Ee6ddObUARUAIQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_1IcX6sHHEe6ddObUARUAIQ" outgoingEdges="_FfrFBMHIEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+            <target xmi:type="e3Value:ValuePortOut" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortOut"/>
+            <semanticElements xmi:type="e3Value:ValuePortOut" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortOut"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+            <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_1IcX68HHEe6ddObUARUAIQ" showIcon="false" labelPosition="node" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortOut.svg">
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortOutInterfaceElementaryActor']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortOutInterfaceElementaryActor']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_yQsAUsHKEe6ddObUARUAIQ" outgoingEdges="_zlw81MHKEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+            <target xmi:type="e3Value:ValuePortIn" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortIn"/>
+            <semanticElements xmi:type="e3Value:ValuePortIn" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortIn"/>
+            <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_yQsAU8HKEe6ddObUARUAIQ" showIcon="false" labelPosition="node" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortIn.svg">
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortInInterfaceElementaryActor']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortInInterfaceElementaryActor']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_KK8glME0Ee6ddObUARUAIQ" name="Client">
+        <target xmi:type="e3Value:ElementaryActor" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1"/>
+        <semanticElements xmi:type="e3Value:ElementaryActor" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_KK8glcE0Ee6ddObUARUAIQ" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/ElementaryActor.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_KsFVAsHHEe6ddObUARUAIQ" incomingEdges="_eYPPIMHKEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+          <target xmi:type="e3Value:StartStimulus" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasStimulusElement.0"/>
+          <semanticElements xmi:type="e3Value:StartStimulus" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasStimulusElement.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_KsFVA8HHEe6ddObUARUAIQ" showIcon="false" labelPosition="node" workspacePath="/e3value.project.design/description/icons/Stimulus/start_stimulus.svg">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subNodeMappings[name='StartStimulusElementaryActor']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subNodeMappings[name='StartStimulusElementaryActor']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_QfmLwsHHEe6ddObUARUAIQ">
+          <target xmi:type="e3Value:ValueInterface" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0"/>
+          <semanticElements xmi:type="e3Value:ValueInterface" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_QfmLw8HHEe6ddObUARUAIQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_2L8cWMHHEe6ddObUARUAIQ" incomingEdges="_FfrFBMHIEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+            <target xmi:type="e3Value:ValuePortIn" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortIn"/>
+            <semanticElements xmi:type="e3Value:ValuePortIn" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortIn"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+            <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_2L8cWcHHEe6ddObUARUAIQ" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortIn.svg">
+              <customFeatures>labelPosition</customFeatures>
+              <customFeatures>showIcon</customFeatures>
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortInInterfaceElementaryActor']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortInInterfaceElementaryActor']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_3nd_GcHHEe6ddObUARUAIQ" outgoingEdges="_eYPPIMHKEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+            <target xmi:type="e3Value:ResponsabilityElement" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@bindsResponsabilityElement"/>
+            <semanticElements xmi:type="e3Value:ResponsabilityElement" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@bindsResponsabilityElement"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+            <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_3nd_GsHHEe6ddObUARUAIQ" showIcon="false" labelPosition="node" workspacePath="/e3value.project.design/description/icons/ValueInterface/responsabilityElement.svg">
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='ResponsabilityElementElementaryActor']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='ResponsabilityElementElementaryActor']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_9PDdPsHIEe6ddObUARUAIQ" incomingEdges="_zlw81MHKEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+            <target xmi:type="e3Value:ValuePortOut" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortOut"/>
+            <semanticElements xmi:type="e3Value:ValuePortOut" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortOut"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+            <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_9PDdP8HIEe6ddObUARUAIQ" showIcon="false" labelPosition="node" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortOut.svg">
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortOutInterfaceElementaryActor']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortOutInterfaceElementaryActor']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_qKTZIsE0Ee6ddObUARUAIQ" name="IoT Devices">
+        <target xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.2"/>
+        <semanticElements xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_qKTZI8E0Ee6ddObUARUAIQ" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/MarketSegment.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_tA1hZME0Ee6ddObUARUAIQ" name="Customs">
+        <target xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.3"/>
+        <semanticElements xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_tA1hZcE0Ee6ddObUARUAIQ" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/MarketSegment.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_xyvxNsE0Ee6ddObUARUAIQ" name="Freight forwarders">
+        <target xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.4"/>
+        <semanticElements xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.4"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_xyvxN8E0Ee6ddObUARUAIQ" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/MarketSegment.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zw9KWME0Ee6ddObUARUAIQ" name="Ship Owners">
+        <target xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.5"/>
+        <semanticElements xmi:type="e3Value:MarketSegment" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.5"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_zw9KWcE0Ee6ddObUARUAIQ" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/MarketSegment.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_E7HJOsE1Ee6ddObUARUAIQ">
+          <target xmi:type="e3Value:ValueInterface" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.5/@hasValuesInterface.0"/>
+          <semanticElements xmi:type="e3Value:ValueInterface" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.5/@hasValuesInterface.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_E7HJO8E1Ee6ddObUARUAIQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_1GK_wMHKEe6ddObUARUAIQ" name="money" outgoingEdges="_BZE7yMHLEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="e3Value:ValueObject" href="maritimeSC.e3value#//@hasE3ValueModels.0/@E3valueModelhasValueObjects.0"/>
+        <semanticElements xmi:type="e3Value:ValueObject" href="maritimeSC.e3value#//@hasE3ValueModels.0/@E3valueModelhasValueObjects.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_1GK_wcHKEe6ddObUARUAIQ" labelSize="9" showIcon="false" labelPosition="node" workspacePath="/e3value.project.design/description/icons/ValueObject.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subNodeMappings[name='ValueObject']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subNodeMappings[name='ValueObject']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_EJktgsHLEe6ddObUARUAIQ" name="information" outgoingEdges="_Im7CmsHLEe6ddObUARUAIQ" width="-1" height="-1" resizeKind="NSEW">
+        <target xmi:type="e3Value:ValueObject" href="maritimeSC.e3value#//@hasE3ValueModels.0/@E3valueModelhasValueObjects.1"/>
+        <semanticElements xmi:type="e3Value:ValueObject" href="maritimeSC.e3value#//@hasE3ValueModels.0/@E3valueModelhasValueObjects.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_EJktg8HLEe6ddObUARUAIQ" labelSize="9" showIcon="false" labelPosition="node" workspacePath="/e3value.project.design/description/icons/ValueObject.png">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subNodeMappings[name='ValueObject']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subNodeMappings[name='ValueObject']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_FfrFBMHIEe6ddObUARUAIQ" incomingEdges="_Im7CmsHLEe6ddObUARUAIQ" sourceNode="_1IcX6sHHEe6ddObUARUAIQ" targetNode="_2L8cWMHHEe6ddObUARUAIQ">
+      <target xmi:type="e3Value:ValueExchange" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortIn/@valueexchange.0"/>
+      <semanticElements xmi:type="e3Value:ValueExchange" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortIn/@valueexchange.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_FfrFBcHIEe6ddObUARUAIQ" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ValueExchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_FfrFBsHIEe6ddObUARUAIQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ValueExchange']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_eYPPIMHKEe6ddObUARUAIQ" sourceNode="_3nd_GcHHEe6ddObUARUAIQ" targetNode="_KsFVAsHHEe6ddObUARUAIQ">
+      <target xmi:type="e3Value:ConnectionElement" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@bindsResponsabilityElement/@connectionelement.0"/>
+      <semanticElements xmi:type="e3Value:ConnectionElement" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@bindsResponsabilityElement/@connectionelement.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_eYPPIcHKEe6ddObUARUAIQ" lineStyle="dash" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ConnectionElement']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_eYPPIsHKEe6ddObUARUAIQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ConnectionElement']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zlw81MHKEe6ddObUARUAIQ" incomingEdges="_BZE7yMHLEe6ddObUARUAIQ" sourceNode="_yQsAUsHKEe6ddObUARUAIQ" targetNode="_9PDdPsHIEe6ddObUARUAIQ">
+      <target xmi:type="e3Value:ValueExchange" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortOut/@valueexchange.0"/>
+      <semanticElements xmi:type="e3Value:ValueExchange" href="maritimeSC.e3value#//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortOut/@valueexchange.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zlw81cHKEe6ddObUARUAIQ" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ValueExchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zlw81sHKEe6ddObUARUAIQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ValueExchange']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_BZE7yMHLEe6ddObUARUAIQ" sourceNode="_1GK_wMHKEe6ddObUARUAIQ" targetNode="_zlw81MHKEe6ddObUARUAIQ">
+      <target xmi:type="e3Value:ValueObject" href="maritimeSC.e3value#//@hasE3ValueModels.0/@E3valueModelhasValueObjects.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_BZE7ycHLEe6ddObUARUAIQ" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='RelationValueObject-ValueExchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_BZE7ysHLEe6ddObUARUAIQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='RelationValueObject-ValueExchange']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Im7CmsHLEe6ddObUARUAIQ" sourceNode="_EJktgsHLEe6ddObUARUAIQ" targetNode="_FfrFBMHIEe6ddObUARUAIQ">
+      <target xmi:type="e3Value:ValueObject" href="maritimeSC.e3value#//@hasE3ValueModels.0/@E3valueModelhasValueObjects.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Im7Cm8HLEe6ddObUARUAIQ" targetArrow="NoDecoration" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='RelationValueObject-ValueExchange']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Im7CnMHLEe6ddObUARUAIQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='RelationValueObject-ValueExchange']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Zbcpkb-cEe6nlJ2WOx-LmA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/e3value.project.design/description/project.odesign#//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer"/>
+    <target xmi:type="e3Value:E3ValueDiagram" href="maritimeSC.e3value#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

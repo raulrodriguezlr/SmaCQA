@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated e3value -->
+      <package
+            uri="http://www.example.org/e3Value"
+            class="e3Value.E3ValuePackage"
+            genModel="model/e3value.genmodel"/>
+   </extension>
+
+</plugin>

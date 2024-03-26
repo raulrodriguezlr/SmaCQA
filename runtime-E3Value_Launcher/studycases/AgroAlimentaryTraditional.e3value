@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e3Value:E3ValueDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:e3Value="http://www.example.org/e3Value">
+  <hasE3ValueModels>
+    <E3valueModelhasValueObjects name="Comodity" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.1/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Packing Slip" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Comodity" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.1/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Packing Slip" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.0/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Packing Slip" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.2/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Comodity" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.2/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Comodity" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.3/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Packing Slip" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Money" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.1/@hasValuePortOut.1/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Information" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.0/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Money" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.0/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Payment Trigger" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.1/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Money" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortOut.1/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Money" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.1/@hasValuePortOut.1/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Information" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.1/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Contract" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.2/@hasValuePortOut.0/@valueexchange.0"/>
+    <E3valueModelhasValueObjects name="Contract" inValueExchange="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.0/@hasValuePortOut.1/@valueexchange.0"/>
+    <hasBusinessActors xsi:type="e3Value:MarketSegment" name="Buyer">
+      <hasStimulusElement xsi:type="e3Value:StartStimulus">
+        <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.1/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasStimulusElement.0"/>
+      </hasStimulusElement>
+      <hasStimulusElement xsi:type="e3Value:EndStimulus">
+        <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasStimulusElement.1"/>
+      </hasStimulusElement>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut>
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.3/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.7"/>
+        </hasValuePortOut>
+        <hasValuePortOut>
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.3/@hasValuePortIn.1" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortOut.1" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.12"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="SOUTH"/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="SOUTH">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.2/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.1/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.14"/>
+        </hasValuePortOut>
+        <hasValuePortOut positionValuePort="SOUTH">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.2/@hasValuePortIn.1" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.1/@hasValuePortOut.1" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.13"/>
+        </hasValuePortOut>
+        <hasValuePortIn/>
+      </hasValuesInterface>
+    </hasBusinessActors>
+    <hasBusinessActors xsi:type="e3Value:ElementaryActor" name="Carrier">
+      <hasDependenceElements xsi:type="e3Value:AndJoin">
+        <hasInputsPort/>
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.4/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasDependenceElements.0/@hasInputsPort.1"/>
+        </hasInputsPort>
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.1/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasDependenceElements.0/@hasInputsPort.2"/>
+        </hasInputsPort>
+        <hasOutputPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasStimulusElement.1" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasDependenceElements.0/@hasOutputPort"/>
+        </hasOutputPort>
+      </hasDependenceElements>
+      <hasDependenceElements xsi:type="e3Value:AndJoin">
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.2/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasDependenceElements.1/@hasInputsPort.0"/>
+        </hasInputsPort>
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasDependenceElements.1/@hasInputsPort.1"/>
+        </hasInputsPort>
+        <hasOutputPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasStimulusElement.0" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasDependenceElements.1/@hasOutputPort"/>
+        </hasOutputPort>
+      </hasDependenceElements>
+      <hasStimulusElement xsi:type="e3Value:EndStimulus"/>
+      <hasStimulusElement xsi:type="e3Value:StartStimulus"/>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="WEST">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.1/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.1"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="EAST"/>
+        <hasValuePortIn positionValuePort="EAST"/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="SOUTH">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.0/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.1/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.2"/>
+        </hasValuePortOut>
+        <hasValuePortIn/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="SOUTH">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.2/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.2/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.4"/>
+        </hasValuePortOut>
+        <hasValuePortIn/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasDependenceElements.0/@hasInputsPort.0" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.3/@bindsResponsabilityElement"/>
+        </bindsResponsabilityElement>
+        <hasValuePortOut positionValuePort="EAST">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.0/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.3/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.6"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="WEST"/>
+        <hasValuePortIn positionValuePort="WEST"/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="EAST">
+          <valueexchange sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.4/@hasValuePortOut.0"/>
+        </hasValuePortOut>
+      </hasValuesInterface>
+      <hasValueActivities name="Transport Unit"/>
+      <hasValueActivities name="IoT Device"/>
+    </hasBusinessActors>
+    <hasBusinessActors xsi:type="e3Value:ElementaryActor" name="Bancary Entity">
+      <hasDependenceElements xsi:type="e3Value:AndJoin">
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.0/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasDependenceElements.0/@hasInputsPort.0"/>
+        </hasInputsPort>
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.2/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasDependenceElements.0/@hasInputsPort.1"/>
+        </hasInputsPort>
+        <hasOutputPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasStimulusElement.0" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasDependenceElements.0/@hasOutputPort"/>
+        </hasOutputPort>
+      </hasDependenceElements>
+      <hasStimulusElement xsi:type="e3Value:EndStimulus"/>
+      <hasStimulusElement xsi:type="e3Value:StartStimulus"/>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="WEST">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.0/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.0/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.10"/>
+        </hasValuePortOut>
+        <hasValuePortOut positionValuePort="WEST">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.0/@hasValuePortIn.1" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.0/@hasValuePortOut.1" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.16"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="EAST"/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasStimulusElement.1" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.1/@bindsResponsabilityElement"/>
+        </bindsResponsabilityElement>
+        <hasValuePortOut>
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.1/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.1/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.11"/>
+        </hasValuePortOut>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="EAST">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.0/@hasValuesInterface.1/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.2/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.15"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="WEST"/>
+        <hasValuePortIn positionValuePort="WEST"/>
+      </hasValuesInterface>
+      <hasValueActivities name="Assests Custody"/>
+      <hasValueActivities name="Negotiation"/>
+    </hasBusinessActors>
+    <hasBusinessActors xsi:type="e3Value:ElementaryActor" name="WareHouse">
+      <hasDependenceElements xsi:type="e3Value:AndJoin" positionJoin="VERTICAL">
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.1/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasDependenceElements.0/@hasInputsPort.0"/>
+        </hasInputsPort>
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.0/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasDependenceElements.0/@hasInputsPort.1"/>
+        </hasInputsPort>
+        <hasOutputPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasStimulusElement.0" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasDependenceElements.0/@hasOutputPort"/>
+        </hasOutputPort>
+      </hasDependenceElements>
+      <hasDependenceElements xsi:type="e3Value:AndJoin" positionJoin="VERTICAL">
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.2/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasDependenceElements.1/@hasInputsPort.0"/>
+        </hasInputsPort>
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.3/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasDependenceElements.1/@hasInputsPort.1"/>
+        </hasInputsPort>
+        <hasOutputPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasStimulusElement.1" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasDependenceElements.1/@hasOutputPort"/>
+        </hasOutputPort>
+      </hasDependenceElements>
+      <hasStimulusElement xsi:type="e3Value:EndStimulus"/>
+      <hasStimulusElement xsi:type="e3Value:StartStimulus"/>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut>
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.1/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.0/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.3"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="SOUTH"/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortIn/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut>
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.2/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.2/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.5"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="SOUTH"/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut positionValuePort="EAST">
+          <valueexchange sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.3/@hasValuesInterface.3/@hasValuePortOut.0"/>
+        </hasValuePortOut>
+      </hasValuesInterface>
+      <hasValueActivities name="Entries"/>
+      <hasValueActivities name="Departures"/>
+      <hasValueActivities name="WeightBridge"/>
+      <hasValueActivities name="Quality Control"/>
+    </hasBusinessActors>
+    <hasBusinessActors xsi:type="e3Value:MarketSegment" name="Farmer">
+      <hasDependenceElements xsi:type="e3Value:AndJoin" positionJoin="VERTICAL">
+        <hasInputsPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.1/@bindsResponsabilityElement" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasDependenceElements.0/@hasInputsPort.0"/>
+        </hasInputsPort>
+        <hasInputsPort/>
+        <hasOutputPort>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasStimulusElement.0" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasDependenceElements.0/@hasOutputPort"/>
+        </hasOutputPort>
+      </hasDependenceElements>
+      <hasStimulusElement xsi:type="e3Value:StartStimulus"/>
+      <hasValuesInterface>
+        <bindsResponsabilityElement>
+          <connectionelement targetDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasDependenceElements.0/@hasInputsPort.1" sourceDependenceElement="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.0/@bindsResponsabilityElement"/>
+        </bindsResponsabilityElement>
+        <hasValuePortOut positionValuePort="SOUTH">
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.2/@hasValuesInterface.0/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.0/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.9"/>
+        </hasValuePortOut>
+        <hasValuePortIn/>
+        <hasValuePortIn/>
+      </hasValuesInterface>
+      <hasValuesInterface>
+        <bindsResponsabilityElement/>
+        <hasValuePortOut>
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortIn.0" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.1/@hasValuePortOut.0" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.0"/>
+        </hasValuePortOut>
+        <hasValuePortOut>
+          <valueexchange targetValuePort="//@hasE3ValueModels.0/@hasBusinessActors.1/@hasValuesInterface.0/@hasValuePortIn.1" sourceValuePort="//@hasE3ValueModels.0/@hasBusinessActors.4/@hasValuesInterface.1/@hasValuePortOut.1" valueExchangeHasValueObject="//@hasE3ValueModels.0/@E3valueModelhasValueObjects.8"/>
+        </hasValuePortOut>
+        <hasValuePortIn positionValuePort="SOUTH"/>
+      </hasValuesInterface>
+    </hasBusinessActors>
+  </hasE3ValueModels>
+</e3Value:E3ValueDiagram>

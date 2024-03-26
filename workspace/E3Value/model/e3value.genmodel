@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/E3Value/src" modelPluginID="E3Value" modelName="E3value"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>e3Value.ecore</foreignModel>
+  <genPackages prefix="E3Value" disposableProviderFactory="true" ecorePackage="e3Value.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="e3Value.ecore#//Position">
+      <genEnumLiterals ecoreEnumLiteral="e3Value.ecore#//Position/NORTH"/>
+      <genEnumLiterals ecoreEnumLiteral="e3Value.ecore#//Position/SOUTH"/>
+      <genEnumLiterals ecoreEnumLiteral="e3Value.ecore#//Position/EAST"/>
+      <genEnumLiterals ecoreEnumLiteral="e3Value.ecore#//Position/WEST"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="e3Value.ecore#//Orientation">
+      <genEnumLiterals ecoreEnumLiteral="e3Value.ecore#//Orientation/HORIZONTAL"/>
+      <genEnumLiterals ecoreEnumLiteral="e3Value.ecore#//Orientation/VERTICAL"/>
+    </genEnums>
+    <genClasses ecoreClass="e3Value.ecore#//CompositeActor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//CompositeActor/hasElementaryActors"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ElementaryActor"/>
+    <genClasses ecoreClass="e3Value.ecore#//Actor"/>
+    <genClasses ecoreClass="e3Value.ecore#//E3ValueDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//E3ValueDiagram/hasE3ValueModels"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//E3ValueModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//E3ValueModel/hasValueExchanges"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//E3ValueModel/E3valueModelhasValueObjects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//E3ValueModel/hasBusinessActors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//E3ValueModel/hasDependenceElements"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ValueObject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute e3Value.ecore#//ValueObject/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueObject/inValueExchange"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ValueExchange">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueExchange/targetValuePort"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueExchange/sourceValuePort"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueExchange/valueExchangeHasValueObject"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ValueInterface">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueInterface/bindsResponsabilityElement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueInterface/hasValuePortOut"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueInterface/hasValuePortIn"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ValuePortIn">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValuePortIn/inConnectWithValueExchange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute e3Value.ecore#//ValuePortIn/positionValuePort"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ValuePortOut">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValuePortOut/outConnectWithValueExchange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute e3Value.ecore#//ValuePortOut/positionValuePort"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//StimulusElement"/>
+    <genClasses ecoreClass="e3Value.ecore#//StartStimulus"/>
+    <genClasses ecoreClass="e3Value.ecore#//EndStimulus"/>
+    <genClasses ecoreClass="e3Value.ecore#//ValueActivity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute e3Value.ecore#//ValueActivity/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueActivity/hasStimulusElement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueActivity/hasDependenceElements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValueActivity/valueinterfaces"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//MarketSegment"/>
+    <genClasses ecoreClass="e3Value.ecore#//BusinessActor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute e3Value.ecore#//BusinessActor/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//BusinessActor/hasDependenceElements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//BusinessActor/hasStimulusElement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//BusinessActor/hasValuesInterface"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//BusinessActor/businessActorsHasValueObjects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//BusinessActor/hasValueActivities"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ValuePort">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ValuePort/valueexchange"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ResponsabilityElement"/>
+    <genClasses ecoreClass="e3Value.ecore#//AndFork"/>
+    <genClasses ecoreClass="e3Value.ecore#//AndJoin"/>
+    <genClasses ecoreClass="e3Value.ecore#//OrFork"/>
+    <genClasses ecoreClass="e3Value.ecore#//OrJoin"/>
+    <genClasses ecoreClass="e3Value.ecore#//ForkElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ForkElement/hasOutputsPort"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//ForkElement/hasInputPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute e3Value.ecore#//ForkElement/positionFork"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//JoinElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//JoinElement/hasInputsPort"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//JoinElement/hasOutputPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute e3Value.ecore#//JoinElement/positionJoin"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//ConnectionElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ConnectionElement/targetDependenceElement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference e3Value.ecore#//ConnectionElement/sourceDependenceElement"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//PortElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference e3Value.ecore#//PortElement/connectionelement"/>
+    </genClasses>
+    <genClasses ecoreClass="e3Value.ecore#//DependencyElement"/>
+    <genClasses ecoreClass="e3Value.ecore#//LogicalElement"/>
+    <genClasses ecoreClass="e3Value.ecore#//OutputPort"/>
+    <genClasses ecoreClass="e3Value.ecore#//InputPort"/>
+  </genPackages>
+</genmodel:GenModel>

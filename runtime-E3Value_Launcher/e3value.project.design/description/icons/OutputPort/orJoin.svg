@@ -1,0 +1,15 @@
+<svg width="35" height="58" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="60" width="37" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill=" none" height="630" width="1180" y="33" x="-209" id="svgEditorBackground"/>
+  <rect stroke="black" fill="black" stroke-width="1px" height="51.000002" width="3" id="e3_rectangle" y="4.031251" x="16.019531"/>
+  <circle stroke="black" fill="black" stroke-width="1px" r="4.992855" cy="21.53125" cx="9.019531" id="e4_circle"/>
+  <circle stroke="black" fill="black" stroke-width="1px" r="4.992857" cy="37.531252" cx="9.019531" id="e1_circle"/>
+  <circle stroke="black" fill="black" stroke-width="1px" r="4.492859" cy="29.03125" cx="28.019531" id="e2_circle"/>
+ </g>
+</svg>

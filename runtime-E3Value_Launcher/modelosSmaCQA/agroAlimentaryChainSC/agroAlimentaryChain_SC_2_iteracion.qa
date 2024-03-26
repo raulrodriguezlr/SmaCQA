@@ -1,0 +1,280 @@
+================= Value Exchange ======================= 
+The exchange of value in which Farmer sends/grants Carrier the following object of value Money has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+2.2 What is the name of the tax? answer = VAT
+2.2.1 Who collects the tax?answer = Government
+2.3 Is another legal document complementary to this SmartContract necessary?answer = no
+2.4 Who is responsible for ensuring compliance with regulations?answer = Farmer
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+3.2 Who is responsible for the transportation cost?responsible = Farmer
+3.6 What is the transport rate?cost = 2000 unitCoin= gwei
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which Carrier sends/grants Farmer the following object of value PackingSlip has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which Farmer sends/grants Carrier the following object of value Comodity has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+2.4 Who is responsible for ensuring compliance with regulations?answer = Farmer
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+--------- 4. Shipment Questions:-----------
+4.1 Is it an international shipment?internationalAnswer = yes
+4.2 Is the product subject to any sanitary control upon arrival at the destination country?sanitaryAnswer = no
+4.6 What is the pickup address for the cargo?address = "Calle de la Paz, 10, 46003 Valencia, España"
+4.7 What is the delivery address?address = "Carrer del Camp, 10, 12100 Castellón de la Plana, España."
+4.9 Does the physical good represent a dangerous load or have special transportation needs?answer = yes
+4.9.1 What special measures are needed for its proper transport?especial measures needed = "Temperature must be between 5-25ºC "
+4.10 Is it a perishable product?answer = yes
+4.10.1 What is its expiration date?answer = "15/06/24"
+4.11 What is the type of cargo?answer = "oranges"
+4.12 How much does the cargo weight (kg)?answer = 2000
+4.13 What are the dimensions of the cargo (length x width x depth in cm)?answer =  200 cm x 200 cm x 150 cm
+4.15 What is the means of transport?answer = "Truck"
+4.16 What is the name of the transport company? name = "TFHN"
+4.17 What is the deadline for delivery?deadline = "05/05/24"
+4.18 Through what means will updates and monitoring data be received?answer = "By mail mailpruebas@urjc.es"
+================= Completion of the question process for this value exchange =================
+
+
+================= Value Exchange ======================= 
+The exchange of value in which Buyer sends/grants Carrier the following object of value Money has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+2.2 What is the name of the tax? answer = VAT
+2.2.1 Who collects the tax?answer = Government
+2.3 Is another legal document complementary to this SmartContract necessary?answer = no
+2.4 Who is responsible for ensuring compliance with regulations?answer = Buyer
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+3.2 Who is responsible for the transportation cost?responsible = Buyer
+3.6 What is the transport rate?cost = 2000 unitCoin= gwei
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which Buyer sends/grants Carrier the following object of value PackingSlip has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which Carrier sends/grants Buyer the following object of value Comodity has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+2.4 Who is responsible for ensuring compliance with regulations?answer = Buyer
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+--------- 4. Shipment Questions:-----------
+4.1 Is it an international shipment?internationalAnswer = yes
+4.2 Is the product subject to any sanitary control upon arrival at the destination country?sanitaryAnswer = no
+4.6 What is the pickup address for the cargo?address = "Carrer del Camp, 10, 12100 Castellón de la Plana, España."
+4.7 What is the delivery address?address = "Rue Paradis, 13006 Marseille, Francia."
+4.9 Does the physical good represent a dangerous load or have special transportation needs?answer = yes
+4.9.1 What special measures are needed for its proper transport?especial measures needed = "Temperature must be between 5-25ºC "
+4.10 Is it a perishable product?answer = yes
+4.10.1 What is its expiration date?answer = "15/06/24"
+4.11 What is the type of cargo?answer = "oranges"
+4.12 How much does the cargo weight (kg)?answer = 2000
+4.13 What are the dimensions of the cargo (length x width x depth in cm)?answer =  200 cm x 200 cm x 150 cm
+4.15 What is the means of transport?answer = "Truck"
+4.16 What is the name of the transport company? name = "TFHN"
+4.17 What is the deadline for delivery?deadline = "15/05/24"
+4.18 Through what means will updates and monitoring data be received?answer = "By mail mailpruebas@urjc.es"
+================= Completion of the question process for this value exchange =================
+
+
+
+================= Value Exchange ======================= 
+The exchange of value in which DecentralizedPlatform sends/grants Farmer the following object of value Money has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+2.2 What is the name of the tax? answer = VAT
+2.2.1 Who collects the tax?answer = Government
+2.3 Is another legal document complementary to this SmartContract necessary?answer = no
+2.4 Who is responsible for ensuring compliance with regulations?answer = Farmer
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which Farmer sends/grants DecentralizedPlatform the following object of value information has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value? answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+2.3 Is another legal document complementary to this SmartContract necessary?answer = no
+2.4 Who is responsible for ensuring compliance with regulations?answer = Farmer
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+
+================= Value Exchange ======================= 
+The exchange of value in which Buyer sends/grants DecentralizedPlatform the following object of value Money has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+2.2 What is the name of the tax? answer = VAT
+2.2.1 Who collects the tax?answer = Government
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which Buyer sends/grants DecentralizedPlatform the following object of value information has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value? answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+2.3 Is another legal document complementary to this SmartContract necessary?answer = no
+2.4 Who is responsible for ensuring compliance with regulations?answer = Farmer
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which DecentralizedPlatform sends/grants Buyer the following object of value DigitalTile has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.2 If the exchange of value could only take place after a certain time. What would this be?(indicated in minutes,days,weeks or years)answer = 1 unitTime = days
+1.3 Can the value exchange be repeated over time? answer = no
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: GrainOwnership Value: Text
+Data name: ID Value: Text
+Data name: Amount Value: Number
+Data name: Tradeable Value: TrueOrFalse
+End Data Declaration
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+
+
+================= Value Exchange ======================= 
+The exchange of value in which DecentralizedPlatform sends/grants WareHouse the following object of value PaymentTrigger has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.1 If the exchange of value is subject to a duration of time. What would this be?(indicated in minutes,days,weeks or years) answer = 1unitTime = minutes
+1.2 If the exchange of value could only take place after a certain time. What would this be?(indicated in minutes,days,weeks or years)answer = 1unitTime = days
+1.3 Can the value exchange be repeated over time?answer = no
+1.5 Is the object of value a right that can be reflected as active or inactive?answer = yes
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+
+
+================= Value Exchange ======================= 
+The exchange of value in which IoTPlatform sends/grants DecentralizedPlatform the following object of value TrackingInsight has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which IoTPlatform sends/grants WareHouse the following object of value TrackingInsight has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which IoTPlatform sends/grants Carrier the following object of value TrackingInsight has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which IoTPlatform sends/grants Buyer the following object of value TrackingInsight has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+
+
+================= Value Exchange ======================= 
+The exchange of value in which Carrier sends/grants WareHouse the following object of value Comodity has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange?answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which WareHouse sends/grants Carrier the following object of value PackingSlip has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+
+
+================= Value Exchange ======================= 
+The exchange of value in which WareHouse sends/grants Carrier the following object of value Comodity has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange?answer = 1
+================= Completion of the question process for this value exchange =================
+================= Value Exchange ======================= 
+The exchange of value in which Carrier sends/grants WareHouse the following object of value PackingSlip has the following associated questions and answers: 
+--------- 1.Data Questions: -----------
+1.3 Can the value exchange be repeated over time? answer = yes
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+--------- 2.Legal Questions: -----------
+2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
+--------- 3.Economy Questions: -----------
+3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
+================= Completion of the question process for this value exchange =================
+
+
+

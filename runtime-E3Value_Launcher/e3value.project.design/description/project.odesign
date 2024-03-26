@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="E3Value">
+    <validationSet name="SemanticValidationRules">
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoNameMarketSegment" level="WARNING" message="The element Market Segment hasn´t got a defined name" targetClass="e3Value::MarketSegment">
+        <audits auditExpression="aql:self.name.toString()&lt;>''"/>
+      </ownedRules>
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoNameElementaryActor" level="WARNING" message="The element Elementary Actor hasn´t got a defined name" targetClass="e3Value::ElementaryActor">
+        <audits auditExpression="aql:self.name.toString()&lt;>''"/>
+      </ownedRules>
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoNameValueActivity" level="WARNING" message="The element Value Activity hasn´t got a defined name" targetClass="e3Value::ValueActivity">
+        <audits auditExpression="aql:self.name.toString()&lt;>''"/>
+      </ownedRules>
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoResponsabilityElementInInterface" level="ERROR" message="The element Value Interface hasn´t got a Responsability Element" targetClass="e3Value::ValueInterface">
+        <audits auditExpression="aql:self.bindsResponsabilityElement->isEmpty()=false"/>
+      </ownedRules>
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoPortInValueInterface" level="ERROR" message="The element Value Interface hasn´t got a ValuePortIn" targetClass="e3Value::ValueInterface">
+        <audits auditExpression="aql:self.hasValuePortIn->isEmpty()=false"/>
+      </ownedRules>
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoPortOutValueInterface" level="ERROR" message="The element Value Interface hasn´t got a ValuePortOut" targetClass="e3Value::ValueInterface">
+        <audits auditExpression="aql:self.hasValuePortOut->isEmpty()=false"/>
+      </ownedRules>
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoValueObjectAssociatedForValueExchange" level="ERROR" message="The element Value Exchange hasn´t got associated a Value Object element." targetClass="e3Value::ValueExchange">
+        <audits auditExpression="aql: not self.valueExchangeHasValueObject->isEmpty()"/>
+      </ownedRules>
+      <ownedRules xsi:type="validation:SemanticValidationRule" name="NoOutputPortAndJoin" level="ERROR" message="The element hasn´t a Output Port" targetClass="e3Value::AndJoin">
+        <audits auditExpression="aql: not self.hasOutputPort->isEmpty()"/>
+      </ownedRules>
+    </validationSet>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="E3VALUE" initialisation="true" domainClass="e3Value.E3ValueDiagram" enablePopupBars="true">
+      <metamodel href="file:/C:/Users/Cristian/Documents/ObeoTesis/ObeoDesigner-Community/workspace/E3Value/model/e3Value.ecore#/"/>
+      <defaultLayer name="Visual Definition">
+        <edgeMappings name="ValueExchange" sourceMapping="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortOutInterfaceElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']/@subNodeMappings[name='PortOutInterfaceMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortInInterfaceElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']/@subNodeMappings[name='PortInInterfaceMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='ValueInterfaceActivityElementaryActor']/@subNodeMappings[name='PortInInterfaceValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='ValueInterfaceActivityElementaryActor']/@subNodeMappings[name='PortOutInterfaceValueActivityElementaryActor']" targetMapping="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortOutInterfaceElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']/@subNodeMappings[name='PortOutInterfaceMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='PortInInterfaceElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']/@subNodeMappings[name='PortInInterfaceMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='ValueInterfaceActivityElementaryActor']/@subNodeMappings[name='PortInInterfaceValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='ValueInterfaceActivityElementaryActor']/@subNodeMappings[name='PortOutInterfaceValueActivityElementaryActor']" targetFinderExpression="feature:sourceValuePort" sourceFinderExpression="feature:targetValuePort" domainClass="e3Value.ValueExchange" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription showIcon="false">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="RelationValueObject-ValueExchange" sourceMapping="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subNodeMappings[name='ValueObjectElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subNodeMappings[name='ValueObjectMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subNodeMappings[name='ValueObject']" targetMapping="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ValueExchange']" targetFinderExpression="feature:inValueExchange">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ConnectionElement" sourceMapping="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='ValueInterfaceActivityElementaryActor']/@subNodeMappings[name='ResponsabilityElementValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='ResponsabilityElementElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']/@subNodeMappings[name='ResponsabilityElementMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='AndForkElementaryActor']/@borderedNodeMappings[name='InputPortAndForkElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='AndJoinElementaryActor']/@borderedNodeMappings[name='InputPortAndJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='OrForkElementaryActor']/@borderedNodeMappings[name='InputPortOrForkElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='OrJoinElementaryActor']/@borderedNodeMappings[name='InputPortOrJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='AndForkValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortAndForkValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='AndJoinValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortAndJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='OrForkValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortOrForkValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='OrJoinValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortOrJoinValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='AndForkMarketSegment']/@borderedNodeMappings[name='InputPortAndForkMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='AndJoinMarketSegment']/@borderedNodeMappings[name='InputPortAndJoinMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='OrForkMarketSegment']/@borderedNodeMappings[name='InputPortOrForkMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='OrJoinMarketSegment']/@borderedNodeMappings[name='InputPortOrJoinMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='AndForkValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortAndForkValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='AndJoinValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortAndJoinValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='OrForkValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortOrForkValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='OrJoinValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortOrJoinValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='AndForkElementaryActor']/@borderedNodeMappings[name='OutputPortAndForkElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='AndJoinElementaryActor']/@borderedNodeMappings[name='OutputPortAndJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='OrForkElementaryActor']/@borderedNodeMappings[name='OutputPortOrForkElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='OrJoinElementaryActor']/@borderedNodeMappings[name='OutputPortOrJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='AndForkValueActivityElementaryActor']/@borderedNodeMappings[name='OutputPortAndForkValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='AndJoinValueActivityElementaryActor']/@borderedNodeMappings[name='OutputPortAndJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='OrForkValueActivityElementaryActor']/@borderedNodeMappings[name='OutputPortOrForkValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='OrJoinValueActivityElementaryActor']/@borderedNodeMappings[name='OutputPortOrJoinValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='AndForkMarketSegment']/@borderedNodeMappings[name='OutputPortAndForkMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='AndJoinMarketSegment']/@borderedNodeMappings[name='OutputPortAndJoinMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='OrForkMarketSegment']/@borderedNodeMappings[name='OutputPortOrForkMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='OrJoinMarketSegment']/@borderedNodeMappings[name='OutputPortOrJoinMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='AndForkValueActivityMarketSegment']/@borderedNodeMappings[name='OutputPortAndForkValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='AndJoinValueActivityMarketSegment']/@borderedNodeMappings[name='OutputPortAndJoinValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='OrForkValueActivityMarketSegment']/@borderedNodeMappings[name='OutputPortOrForkValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='OrJoinValueActivityMarketSegment']/@borderedNodeMappings[name='OutputPortOrJoinValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subNodeMappings[name='StartStimulusElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subNodeMappings[name='StartStimulusValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subNodeMappings[name='StartStimulusMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subNodeMappings[name='EndStimulusElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subNodeMappings[name='EndStimulusElementValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subNodeMappings[name='EndStimulusMarketSegment']" targetMapping="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='ValueInterfaceActivityElementaryActor']/@subNodeMappings[name='ResponsabilityElementValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueInterfaceElementaryActor']/@subNodeMappings[name='ResponsabilityElementElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueInterfaceMarketSegment']/@subNodeMappings[name='ResponsabilityElementMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='AndForkElementaryActor']/@borderedNodeMappings[name='InputPortAndForkElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='AndJoinElementaryActor']/@borderedNodeMappings[name='InputPortAndJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='OrForkElementaryActor']/@borderedNodeMappings[name='InputPortOrForkElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='OrJoinElementaryActor']/@borderedNodeMappings[name='InputPortOrJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='AndForkValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortAndForkValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='AndJoinValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortAndJoinElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='OrForkValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortOrForkValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subContainerMappings[name='OrJoinValueActivityElementaryActor']/@borderedNodeMappings[name='InputPortOrJoinValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='AndForkMarketSegment']/@borderedNodeMappings[name='InputPortAndForkMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='AndJoinMarketSegment']/@borderedNodeMappings[name='InputPortAndJoinMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='OrForkMarketSegment']/@borderedNodeMappings[name='InputPortOrForkMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='OrJoinMarketSegment']/@borderedNodeMappings[name='InputPortOrJoinMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='AndForkValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortAndForkValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='AndJoinValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortAndJoinValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='OrForkValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortOrForkValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subContainerMappings[name='ValueActivityMarketSegment']/@subContainerMappings[name='OrJoinValueActivityMarketSegment']/@borderedNodeMappings[name='InputPortOrJoinValueActivityMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subNodeMappings[name='StartStimulusElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subNodeMappings[name='StartStimulusValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subNodeMappings[name='StartStimulusMarketSegment'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subNodeMappings[name='EndStimulusElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='ElementaryActor']/@subContainerMappings[name='ValueActivityElementaryActor']/@subNodeMappings[name='EndStimulusElementValueActivityElementaryActor'] //@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@containerMappings[name='E3ValueModelCompartmentDiagram']/@subContainerMappings[name='MarketSegment']/@subNodeMappings[name='EndStimulusMarketSegment']" targetFinderExpression="aql:self.targetDependenceElement" sourceFinderExpression="aql:self.sourceDependenceElement" domainClass="e3Value.ConnectionElement" useDomainElement="true">
+          <style lineStyle="dash" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="E3ValueModelCompartmentDiagram" semanticCandidatesExpression="feature:hasE3ValueModels" domainClass="e3Value.E3ValueModel">
+          <subNodeMappings name="ValueObject" semanticCandidatesExpression="[E3valueModelhasValueObjects/]" domainClass="e3Value.ValueObject">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueObject.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subContainerMappings name="MarketSegment" semanticCandidatesExpression="aql:self.hasBusinessActors" domainClass="e3Value.MarketSegment">
+            <subNodeMappings name="StartStimulusMarketSegment" semanticCandidatesExpression="aql:self.hasStimulusElement" domainClass="e3Value.StartStimulus">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/start_stimulus.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="EndStimulusMarketSegment" semanticCandidatesExpression="aql:self.hasStimulusElement" domainClass="e3Value.EndStimulus">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/end_stimulus.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="ValueObjectMarketSegment" semanticCandidatesExpression="aql:self.businessActorsHasValueObjects" domainClass="e3Value.ValueObject">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueObject.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subContainerMappings name="ValueActivityMarketSegment" semanticCandidatesExpression="feature:hasValueActivities" domainClass="e3Value.ValueActivity">
+              <subNodeMappings name="StartStimulusValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.StartStimulus">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/start_stimulus.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="EndStimulusValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.EndStimulus">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/end_stimulus.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <subContainerMappings name="AndJoinValueActivityMarketSegment" semanticCandidatesExpression="feature:hasDependenceElements" domainClass="e3Value.AndJoin">
+                <borderedNodeMappings name="InputPortAndJoinValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortAndJoinValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <subContainerMappings name="AndForkValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.AndFork">
+                <borderedNodeMappings name="InputPortAndForkValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.InputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortAndForkValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/andFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <subContainerMappings name="OrJoinValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.OrJoin">
+                <borderedNodeMappings name="InputPortOrJoinValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortOrJoinValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <subContainerMappings name="OrForkValueActivityMarketSegment" semanticCandidatesExpression="feature:hasDependenceElements" domainClass="e3Value.OrFork">
+                <borderedNodeMappings name="InputPortOrForkValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.OrFork">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortOrForkValueActivityMarketSegment" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/orFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <subContainerMappings name="InterfaceValueMarketSegment" semanticCandidatesExpression="aql:self.valueinterfaces" domainClass="e3Value.ValueInterface">
+                <subNodeMappings name="PortInInterfaceValueActivityMarketSegment" semanticCandidatesExpression="feature:hasValuePortIn" domainClass="e3Value.ValuePortIn">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortIn.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                </subNodeMappings>
+                <subNodeMappings name="PortOutInterfaceMarketSegment" semanticCandidatesExpression="feature:hasValuePortOut" domainClass="e3Value.ValuePortOut">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortOut.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                </subNodeMappings>
+                <subNodeMappings name="ResponsabilityElementInterfaceActivityValue" semanticCandidatesExpression="aql:self.bindsResponsabilityElement" domainClass="e3Value.ResponsabilityElement">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/responsabilityElement.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </subNodeMappings>
+                <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" borderSizeComputationExpression="1" showIcon="false" labelExpression="">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" arcHeight="5" borderSizeComputationExpression="2" showIcon="false" labelAlignment="LEFT" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <subContainerMappings name="ValueInterfaceMarketSegment" semanticCandidatesExpression="feature:hasValuesInterface" domainClass="e3Value.ValueInterface">
+              <subNodeMappings name="PortInInterfaceMarketSegment" semanticCandidatesExpression="feature:hasValuePortIn" domainClass="e3Value.ValuePortIn">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortIn.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subNodeMappings>
+              <subNodeMappings name="PortOutInterfaceMarketSegment" semanticCandidatesExpression="feature:hasValuePortOut" domainClass="e3Value.ValuePortOut">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortOut.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subNodeMappings>
+              <subNodeMappings name="ResponsabilityElementMarketSegment" semanticCandidatesExpression="feature:bindsResponsabilityElement" domainClass="e3Value.ResponsabilityElement">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/responsabilityElement.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" borderSizeComputationExpression="1" showIcon="false" labelExpression="" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subContainerMappings>
+            <subContainerMappings name="AndJoinMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.AndJoin">
+              <borderedNodeMappings name="InputPortAndJoinMarketSegment" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortAndJoinMarketSegment" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <subContainerMappings name="AndForkMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.AndFork">
+              <borderedNodeMappings name="InputPortAndForkMarketSegment" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortAndForkMarketSegment" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/andFork.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <subContainerMappings name="OrJoinMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.OrJoin">
+              <borderedNodeMappings name="InputPortOrJoinMarketSegment" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortOrJoinMarketSegment" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <subContainerMappings name="OrForkMarketSegment" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.OrFork">
+              <borderedNodeMappings name="InputPortOrForkMarketSegment" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortOrForkMarketSegment" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/orFork.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/MarketSegment.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="ElementaryActor" semanticCandidatesExpression="feature:hasBusinessActors" domainClass="e3Value.ElementaryActor">
+            <subNodeMappings name="StartStimulusElementaryActor" semanticCandidatesExpression="aql:self.hasStimulusElement" domainClass="e3Value.StartStimulus">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/start_stimulus.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="EndStimulusElementaryActor" semanticCandidatesExpression="aql:self.hasStimulusElement" domainClass="e3Value.EndStimulus">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/end_stimulus.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="ValueObjectElementaryActor" semanticCandidatesExpression="aql:self.businessActorsHasValueObjects" domainClass="e3Value.ValueObject">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueObject.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subContainerMappings name="ValueInterfaceElementaryActor" semanticCandidatesExpression="feature:hasValuesInterface" domainClass="e3Value.ValueInterface">
+              <subNodeMappings name="PortInInterfaceElementaryActor" semanticCandidatesExpression="feature:hasValuePortIn" domainClass="e3Value.ValuePortIn">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortIn.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subNodeMappings>
+              <subNodeMappings name="PortOutInterfaceElementaryActor" semanticCandidatesExpression="feature:hasValuePortOut" domainClass="e3Value.ValuePortOut">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortOut.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subNodeMappings>
+              <subNodeMappings name="ResponsabilityElementElementaryActor" semanticCandidatesExpression="aql:self.bindsResponsabilityElement" domainClass="e3Value.ResponsabilityElement">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/responsabilityElement.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" borderSizeComputationExpression="1" showIcon="false" labelExpression="" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subContainerMappings>
+            <subContainerMappings name="ValueActivityElementaryActor" semanticCandidatesExpression="feature:hasValueActivities" domainClass="e3Value.ValueActivity">
+              <subNodeMappings name="StartStimulusValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.StartStimulus">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/start_stimulus.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="EndStimulusElementValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.EndStimulus">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/Stimulus/end_stimulus.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+              <subContainerMappings name="ValueInterfaceActivityElementaryActor" semanticCandidatesExpression="aql:self.valueinterfaces" domainClass="e3Value.ValueInterface">
+                <subNodeMappings name="ResponsabilityElementValueActivityElementaryActor" semanticCandidatesExpression="feature:eAllContents" domainClass="e3Value.ResponsabilityElement">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/responsabilityElement.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </subNodeMappings>
+                <subNodeMappings name="PortInInterfaceValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasValuePortIn" domainClass="e3Value.ValuePortIn">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortIn.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                </subNodeMappings>
+                <subNodeMappings name="PortOutInterfaceValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasValuePortOut" domainClass="e3Value.ValuePortOut">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/PortOut.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('NORTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portNorth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('SOUTH')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/portSouth.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('EAST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthEast.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                  <conditionnalStyles predicateExpression="aql:self.positionValuePort.toString().matches('WEST')">
+                    <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/ValueInterface/porthWest.svg">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </conditionnalStyles>
+                </subNodeMappings>
+                <style xsi:type="style:FlatContainerStyleDescription" arcWidth="20" arcHeight="20" borderSizeComputationExpression="1" showIcon="false" labelExpression="" roundedCorner="true">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+              </subContainerMappings>
+              <subContainerMappings name="AndJoinValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.AndJoin">
+                <borderedNodeMappings name="InputPortAndJoinElementaryActor" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortAndJoinElementaryActor" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <subContainerMappings name="AndForkValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.AndFork">
+                <borderedNodeMappings name="InputPortAndForkValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.InputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortAndForkValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/andFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <subContainerMappings name="OrJoinValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.OrJoin">
+                <borderedNodeMappings name="InputPortOrJoinValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortOrJoinValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <subContainerMappings name="OrForkValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.OrFork">
+                <borderedNodeMappings name="InputPortOrForkValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.InputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <borderedNodeMappings name="OutputPortOrForkValueActivityElementaryActor" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </borderedNodeMappings>
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/orFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+                <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                  <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  </style>
+                </conditionnalStyles>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" arcHeight="5" borderSizeComputationExpression="3" showIcon="false" labelAlignment="LEFT" roundedCorner="true">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <subContainerMappings name="AndJoinElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.AndJoin">
+              <borderedNodeMappings name="InputPortAndJoinElementaryActor" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortAndJoinElementaryActor" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <subContainerMappings name="AndForkElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.AndFork">
+              <borderedNodeMappings name="InputPortAndForkElementaryActor" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortAndForkElementaryActor" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/andFork.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <subContainerMappings name="OrJoinElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.OrJoin">
+              <borderedNodeMappings name="InputPortOrJoinElementaryActor" semanticCandidatesExpression="aql:self.hasInputsPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortOrJoinElementaryActor" semanticCandidatesExpression="aql:self.hasOutputPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('HORIZONTAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/horizontalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionJoin.toString().matches('VERTICAL')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/verticalJoin.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <subContainerMappings name="OrForkElementaryActor" semanticCandidatesExpression="aql:self.hasDependenceElements" domainClass="e3Value.OrFork">
+              <borderedNodeMappings name="InputPortOrForkElementaryActor" semanticCandidatesExpression="aql:self.hasInputPort" domainClass="e3Value.InputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/inputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <borderedNodeMappings name="OutputPortOrForkElementaryActor" semanticCandidatesExpression="aql:self.hasOutputsPort" domainClass="e3Value.OutputPort">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/e3value.project.design/description/icons/OutputPort/outputPort.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </borderedNodeMappings>
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/orFork.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('NORTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/nothFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('SOUTH')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/southFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('EAST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/eastFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql:self.positionFork.toString().matches('WEST')">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="" workspacePath="/e3value.project.design/description/icons/OutputPort/westFork.svg">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </conditionnalStyles>
+            </subContainerMappings>
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelAlignment="LEFT" workspacePath="/e3value.project.design/description/icons/ElementaryActor.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Model">
+          <ownedTools xsi:type="tool:ToolDescription" name="ModelE3Value" iconPath="/e3value.project.design/description/icons/PngTools/model.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.E3ValueModel" referenceName="hasE3ValueModels"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Elements">
+          <ownedTools xsi:type="tool:ToolDescription" name="MarketSegment" iconPath="/e3value.project.design/description/icons/PngTools/MarketSegment.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.MarketSegment" referenceName="hasBusinessActors"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="ElementaryActor" iconPath="/e3value.project.design/description/icons/PngTools/ElementaryActor.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ElementaryActor" referenceName="hasBusinessActors"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="StartStimulus" iconPath="/e3value.project.design/description/icons/Stimulus/start_stimulus.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.StartStimulus" referenceName="hasStimulusElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="EndStimulus" iconPath="/e3value.project.design/description/icons/Stimulus/end_stimulus.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element"/>
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.EndStimulus" referenceName="hasStimulusElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="ValueInterface" iconPath="/e3value.project.design/description/icons/PngTools/ValueInterface.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValueInterface" referenceName="hasValuesInterface"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="ResponsabilityElementInterface" iconPath="/e3value.project.design/description/icons/PngTools/responsabilityElement.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value::ResponsabilityElement" referenceName="bindsResponsabilityElement"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ResponsabilityElement" referenceName="bindsResponsabilityElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="PortIN" iconPath="/e3value.project.design/description/icons/PngTools/portIn.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValuePortIn" referenceName="hasValuePortIn"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="PortOUT" iconPath="/e3value.project.design/description/icons/PngTools/portOut.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValuePortOut" referenceName="hasValuePortOut"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="ValueObject" iconPath="/e3value.project.design/description/icons/PngTools/ValueObject.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValueObject" referenceName="E3valueModelhasValueObjects"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Ports">
+          <ownedTools xsi:type="tool_1:ToolGroup" name="PortElement">
+            <tools xsi:type="tool:ToolDescription" name="AndJoin" iconPath="/e3value.project.design/description/icons/PngTools/andJoin.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.AndJoin" referenceName="hasDependenceElements"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:ToolDescription" name="OrJoin" iconPath="/e3value.project.design/description/icons/PngTools/orJoin.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.OrJoin" referenceName="hasDependenceElements"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:ToolDescription" name="AndFork" iconPath="/e3value.project.design/description/icons/PngTools/andFork.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.AndFork" referenceName="hasDependenceElements"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:ToolDescription" name="OrFork" iconPath="/e3value.project.design/description/icons/PngTools/orFork.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.OrFork" referenceName="hasDependenceElements"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:ToolDescription" name="InputPortFork" iconPath="/e3value.project.design/description/icons/PngTools/Input-OutputPort.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.InputPort" referenceName="hasInputPort"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:ToolDescription" name="OutPortFork" iconPath="/e3value.project.design/description/icons/PngTools/Input-OutputPort.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.OutputPort" referenceName="hasOutputsPort"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:ToolDescription" name="InputPortJoin" iconPath="/e3value.project.design/description/icons/PngTools/Input-OutputPort.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.InputPort" referenceName="hasInputsPort"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:ToolDescription" name="OutputPortJoin" iconPath="/e3value.project.design/description/icons/PngTools/Input-OutputPort.png">
+              <element name="element"/>
+              <elementView name="elementView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.OutputPort" referenceName="hasOutputPort"/>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="ValueActivity">
+          <ownedTools xsi:type="tool:ToolDescription" name="ValueActivity" iconPath="/e3value.project.design/description/icons/PngTools/ValueActivity.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValueActivity" referenceName="hasValueActivities"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="ValueInterfaceValueActivity" iconPath="/e3value.project.design/description/icons/PngTools/ValueInterface.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValueInterface" referenceName="valueinterfaces"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="StartStimulusValueActivity" iconPath="/e3value.project.design/description/icons/Stimulus/start_stimulus.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.StartStimulus" referenceName="hasDependenceElements"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="EndStimulusValueActivity" iconPath="/e3value.project.design/description/icons/Stimulus/end_stimulus.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.EndStimulus" referenceName="hasDependenceElements"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="PortINValueInterfaceValueActivity" iconPath="/e3value.project.design/description/icons/PngTools/portIn.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValuePortIn" referenceName="hasValuePortIn"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="PortOUTValueInterfaceValueActivity" iconPath="/e3value.project.design/description/icons/PngTools/portOut.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValuePortOut" referenceName="hasValuePortOut"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolDescription" name="ResponsabilityElementInterfaceValueActivity" iconPath="/e3value.project.design/description/icons/PngTools/responsabilityElement.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                  <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                    <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value::ResponsabilityElement" referenceName="bindsResponsabilityElement"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ResponsabilityElement" referenceName="bindsResponsabilityElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Relations">
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="ValueExchangeConnection" edgeMappings="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ValueExchange']" iconPath="/e3value.project.design/description/icons/PngTools/valueConnection.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="source.eContainer()">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ValueExchange" referenceName="valueexchange">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="sourceValuePort" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="targetValuePort" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="ValueObject-ValueExchange" edgeMappings="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='RelationValueObject-ValueExchange']" iconPath="/e3value.project.design/description/icons/PngTools/ValueObjectToValueConnection.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="inValueExchange" valueExpression="var:target">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="var:target">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="valueExchangeHasValueObject" valueExpression="var:source"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="ConnectionElement" edgeMappings="//@ownedViewpoints[name='E3Value']/@ownedRepresentations[name='E3VALUE']/@defaultLayer/@edgeMappings[name='ConnectionElement']" iconPath="/e3value.project.design/description/icons/PngTools/connectionElement.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="source.eContainer()">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="e3Value.ConnectionElement" referenceName="connectionelement">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="sourceDependenceElement" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="targetDependenceElement" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="my.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

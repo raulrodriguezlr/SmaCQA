@@ -1,0 +1,13 @@
+<svg width="49" height="42" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <defs>
+  <polygon fill="khaki" stroke="black" stroke-width="1px" id="svgEditorShapeDefs"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="44" width="51" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#000000" transform="rotate(-91 23.9499797821045,21.221548080444343) " fill="silver" stroke-width="2px" id="e3_shape" d="m23.949979,2.579932l-19.984751,37.283234l39.969502,0l-19.984751,-37.283234z"/>
+ </g>
+</svg>

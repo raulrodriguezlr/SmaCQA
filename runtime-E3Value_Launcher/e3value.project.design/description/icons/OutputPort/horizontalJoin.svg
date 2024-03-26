@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43.946237639728" height="43" preserveAspectRatio="xMidYMid meet" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none" class="" style=""/>
+
+ <g style="">
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="48" width="12" y="-1" x="-1"/>
+ </g>
+ <g style="" class="currentLayer">
+  <title>Layer 1</title>
+  
+  <rect stroke="black" fill="black" stroke-width="1px" height="40.7273063659668" width="3.636370897293091" id="e1_rectangle" y="2.010744094848633" x="20.15616488456726" class="" transform="rotate(90.8838119506836 21.974349975585938,22.37439727783203) "/>
+ </g>
+</svg>
