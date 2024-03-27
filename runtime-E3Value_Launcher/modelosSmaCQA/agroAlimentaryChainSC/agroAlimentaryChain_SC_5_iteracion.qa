@@ -37,10 +37,10 @@ The exchange of value in which Farmer sends/grants Carrier the following object 
 --------- 4. Shipment Questions:-----------
 4.1 Is it an international shipment?internationalAnswer = yes
 4.2 Is the product subject to any sanitary control upon arrival at the destination country?sanitaryAnswer = no
-4.6 What is the pickup address for the cargo?address = "Calle de la Paz, 10, 46003 Valencia, España"
-4.7 What is the delivery address?address = "Carrer del Camp, 10, 12100 Castellón de la Plana, España."
+4.6 What is the pickup address for the cargo?address = "Calle de la Paz, 10, 46003 Valencia, EspaÃ±a"
+4.7 What is the delivery address?address = "Carrer del Camp, 10, 12100 CastellÃ³n de la Plana, EspaÃ±a."
 4.9 Does the physical good represent a dangerous load or have special transportation needs?answer = yes
-4.9.1 What special measures are needed for its proper transport?especial measures needed = "Temperature must be between 5-25ºC "
+4.9.1 What special measures are needed for its proper transport?especial measures needed = "Temperature must be between 5-25ÂºC "
 4.10 Is it a perishable product?answer = yes
 4.10.1 What is its expiration date?answer = "15/06/24"
 4.11 What is the type of cargo?answer = "oranges"
@@ -109,10 +109,10 @@ The exchange of value in which Carrier sends/grants Buyer the following object o
 --------- 4. Shipment Questions:-----------
 4.1 Is it an international shipment?internationalAnswer = yes
 4.2 Is the product subject to any sanitary control upon arrival at the destination country?sanitaryAnswer = no
-4.6 What is the pickup address for the cargo?address = "Carrer del Camp, 10, 12100 Castellón de la Plana, España."
+4.6 What is the pickup address for the cargo?address = "Carrer del Camp, 10, 12100 CastellÃ³n de la Plana, EspaÃ±a."
 4.7 What is the delivery address?address = "Rue Paradis, 13006 Marseille, Francia."
 4.9 Does the physical good represent a dangerous load or have special transportation needs?answer = yes
-4.9.1 What special measures are needed for its proper transport?especial measures needed = "Temperature must be between 5-25ºC "
+4.9.1 What special measures are needed for its proper transport?especial measures needed = "Temperature must be between 5-25ÂºC "
 4.10 Is it a perishable product?answer = yes
 4.10.1 What is its expiration date?answer = "15/06/24"
 4.11 What is the type of cargo?answer = "oranges"
