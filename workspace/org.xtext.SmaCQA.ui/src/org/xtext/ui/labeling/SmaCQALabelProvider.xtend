@@ -51,6 +51,7 @@ import org.xtext.smaCQA.impl.InternationalSealQuestionImpl
 import org.xtext.smaCQA.impl.HealthInspectionQuestionImpl
 import org.xtext.smaCQA.impl.StorageConditionsQuestionImpl
 import org.xtext.smaCQA.impl.MaritimeQuestionImpl
+import org.xtext.smaCQA.impl.ExpectedQualityQuestionImpl
 
 /**
  * Provides labels for EObjects.
@@ -82,7 +83,7 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
 	//4.4=>4.4.1
     def text(ImportTaxQuestionImpl importTaxQuestionImpl){
 	    var s="Import Tax Question: " + importTaxQuestionImpl.name+ " -> " + importTaxQuestionImpl.answer.toString 
-	    if(importTaxQuestionImpl.subSentence != null &&importTaxQuestionImpl.subSentence.name.toString.length>5)
+	    if(importTaxQuestionImpl.subSentence !== null &&importTaxQuestionImpl.subSentence.name.toString.length>5)
 	    	s+=" (Amount: "+importTaxQuestionImpl.subSentence.answer +" "+importTaxQuestionImpl.subSentence.answerUnitCoin.literal+")"
 	   	s.toString
     }
@@ -98,7 +99,7 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
 	//4.5=>4.5.1
     def text(GeographicalQuestionImpl geographicalQuestionImpl){
         var s="Geographic Restriction Question: " + geographicalQuestionImpl.name+ " -> " + geographicalQuestionImpl.answer.toString 
-        if(geographicalQuestionImpl.subSentenceRestriction != null && geographicalQuestionImpl.subSentenceRestriction.name.toString.length>5)
+        if(geographicalQuestionImpl.subSentenceRestriction !== null && geographicalQuestionImpl.subSentenceRestriction.name.toString.length>5)
 	    	s+=" (Restriction: "+geographicalQuestionImpl.subSentenceRestriction.answer.toString+")"
 	   	s.toString
     }
@@ -120,14 +121,14 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
     //4.9=>4.9.1
 	def text(DangerousLoadQuestionImpl dangerousLoadQuestionImpl){
         var s="Dangerous Load Question: " + dangerousLoadQuestionImpl.name+ " -> " + dangerousLoadQuestionImpl.answer.toString
-         if(dangerousLoadQuestionImpl.subSentenceSpecialMeasures != null && dangerousLoadQuestionImpl.subSentenceSpecialMeasures.name.toString.length>5)
+         if(dangerousLoadQuestionImpl.subSentenceSpecialMeasures !== null && dangerousLoadQuestionImpl.subSentenceSpecialMeasures.name.toString.length>5)
 	    	s+=" (Special Measure: "+dangerousLoadQuestionImpl.subSentenceSpecialMeasures.answer.toString+")"
 	   	s.toString
     }
     //4.10=>4.10.1
 	def text(PerishableQuestionImpl perishableQuestionImpl){
         var s="Perishable Question : " + perishableQuestionImpl.name+ " -> " + perishableQuestionImpl.answer.toString
-         if(perishableQuestionImpl.subSentencePerishable != null && perishableQuestionImpl.subSentencePerishable.name.toString.length>5 )
+         if(perishableQuestionImpl.subSentencePerishable !== null && perishableQuestionImpl.subSentencePerishable.name.toString.length>5 )
 	    	s+=" (Expiration Date Question: "+perishableQuestionImpl.subSentencePerishable.answer.toString+")"
 	   	s.toString
     }
@@ -150,36 +151,20 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
      //4.14=>4.14.1  14.4.2  14.4.3  14.4.4  14.4.4.1
 	def text(SeaShipmentQuestionImpl seaShipmentQuestionImpl){
         var s="Sea Shipment Question: " + seaShipmentQuestionImpl.name+ " -> " + seaShipmentQuestionImpl.answer.toString
-        /*
-        if(seaShipmentQuestionImpl.maritime != null){
-	        if(seaShipmentQuestionImpl.maritime.q1.toString.length>5 )
-		    	s+="\n\r\t(Origin Port: "+seaShipmentQuestionImpl.maritime.answer1.toString+")"
-		    if(seaShipmentQuestionImpl.maritime.q2.toString.length>5)
-		    	s+="\n\r\t(Destiny Port: "+seaShipmentQuestionImpl.maritime.answer2.toString+")"
-		    if(seaShipmentQuestionImpl.maritime.q3.toString.length>5)
-		    	s+="\n\r\t(Agent Port Key Decisions Question: "+seaShipmentQuestionImpl.maritime.answer3.toString+")"
-		    if(seaShipmentQuestionImpl.maritime.q4.toString.length>5){
-		    	s+="\n\r\t(Voyage Type Decisions: "+seaShipmentQuestionImpl.maritime.answer4.toString+")"
-		    if(seaShipmentQuestionImpl.maritime.subSentence != null)
-		    	if(seaShipmentQuestionImpl.maritime.subSentence.name.toString.length>5)
-		    	s+=" ->How long: "+seaShipmentQuestionImpl.maritime.subSentence.answerSubSentence.toString+" "+seaShipmentQuestionImpl.maritime.subSentence.answerUnitTime.literal+")"
-		    	}
-	    }
-	    	else
-	    		s+=")" */
+  
 	   	s.toString
     }
     def text(MaritimeQuestionImpl maritimeQuestionImpl){
     	var s=""
 		if(maritimeQuestionImpl.q1.toString.length>5 )
-	    	s+="\n\r\t(Origin Port: "+maritimeQuestionImpl.answer1.toString+")"
+	    	s+="(Origin Port: "+maritimeQuestionImpl.answer1.toString+")"
 	    if(maritimeQuestionImpl.q2.toString.length>5)
-	    	s+="\n\r\t(Destiny Port: "+maritimeQuestionImpl.answer2.toString+")"
+	    	s+=" (Destiny Port: "+maritimeQuestionImpl.answer2.toString+")"
 	    if(maritimeQuestionImpl.q3.toString.length>5)
-	    	s+="\n\r\t(Agent Port Key Decisions Question: "+maritimeQuestionImpl.answer3.toString+")"
+	    	s+=" (Agent Port Key Decisions Question: "+maritimeQuestionImpl.answer3.toString+")"
 	    if(maritimeQuestionImpl.q4.toString.length>5){
-	    	s+="\n\r\t(Voyage Type Decisions: "+maritimeQuestionImpl.answer4.toString+")"
-	    if(maritimeQuestionImpl.subSentence != null)
+	    	s+=" (Voyage Type Decisions: "+maritimeQuestionImpl.answer4.toString+")"
+	    if(maritimeQuestionImpl.subSentence !== null)
 	    	s+=" ->How long: "+maritimeQuestionImpl.subSentence.answerSubSentence.toString+" "+maritimeQuestionImpl.subSentence.answerUnitTime.literal+")"
 	    }
 		 s.toString
@@ -205,7 +190,7 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
     //4.19=>4.19.1
 	def text(ExternalMediatorQuestionImpl externalMeditorQuestionImpl){
          var s="External Mediator Question : " + externalMeditorQuestionImpl.name+ " -> " + externalMeditorQuestionImpl.answer.toString
-         if(externalMeditorQuestionImpl.subsentence != null && externalMeditorQuestionImpl.subsentence.name.toString.length>5 )
+         if(externalMeditorQuestionImpl.subsentence !== null && externalMeditorQuestionImpl.subsentence.name.toString.length>5 )
 	    	s+=" (External Mediator Name: "+externalMeditorQuestionImpl.subsentence.answer.toString+")"
 	   	s.toString
     }
@@ -213,66 +198,24 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
     //5.1=>5.1.1  ,5.1.2,  5.1.3
 	def text(ShipmentInsuranceQuestionImpl shipmentInsuranceQuestionImpl){
          var s="Shipment Insurance Question : " + shipmentInsuranceQuestionImpl.name+ " -> " + shipmentInsuranceQuestionImpl.answer.toString
-        // if(insuranceDetailsQuestionImpl != null){
-         //	if(insuranceDetailsQuestionImpl.q1.toString.length>5)
-	    	//	s+=" (Insurance Cost : "+insuranceDetailsQuestionImpl.answer1.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin1.literal+")\r\n"
-	    //	if(insuranceDetailsQuestionImpl.q2.toString.length>5)
-	    //		s+=" (Insurance clauses : "+insuranceDetailsQuestionImpl.answer2.toString+")\r\n"
-	    //	if(insuranceDetailsQuestionImpl.q3.toString.length>5)
-	    //		s+=" (Insurance clauses : "+insuranceDetailsQuestionImpl.answer3.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin3.literal+")\r\n"
-       // }
-        s.toString
-        
+        s.toString    
     }
      //5.1.1  ,5.1.2,  5.1.3
 	def text(InsuranceDetailsQuestionImpl insuranceDetailsQuestionImpl){
-    
-        //Si las 3 estan contestadas
-     	if(insuranceDetailsQuestionImpl.q1.toString.length>5
-     			&&insuranceDetailsQuestionImpl.q2.toString.length>5
-     				&&insuranceDetailsQuestionImpl.q3.toString.length>5){
-    		return " (Insurance Cost : "+insuranceDetailsQuestionImpl.answer1.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin1.literal+")  (Insurance clauses : "+insuranceDetailsQuestionImpl.answer2.toString+")  (Refund  : "+insuranceDetailsQuestionImpl.answer3.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin3.literal+")\r\n"		
-    	
-    	}
-    	//Si solo la 1 esta contestada
-    	 else if(insuranceDetailsQuestionImpl.q1.toString.length>5
-    			&&insuranceDetailsQuestionImpl.q2.toString.length<5
-    				&&insuranceDetailsQuestionImpl.q3.toString.length<5)
-    		return " (Insurance Cost : "+insuranceDetailsQuestionImpl.answer1.toString+")\r\n"
-    	//Si solo la 2 esta contestada
-    	 else if(insuranceDetailsQuestionImpl.q1.toString.length<5
-				&&insuranceDetailsQuestionImpl.q2.toString.length>5
-					&&insuranceDetailsQuestionImpl.q3.toString.length<5)
-    		return "(Insurance clauses : "+insuranceDetailsQuestionImpl.answer2.toString+")+\r\n"
-    	//Si solo la 3 esta contestada
-    	 else if(insuranceDetailsQuestionImpl.q1.toString.length<5
-				&&insuranceDetailsQuestionImpl.q2.toString.length<5
-					&&insuranceDetailsQuestionImpl.q3.toString.length>5)
-    		return "(Refund  : "+insuranceDetailsQuestionImpl.answer3.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin3.literal+")\r\n"		
-    	//Si solo la 1 y la 2 estan contestadas
-    	 else if(insuranceDetailsQuestionImpl.q1.toString.length>5
-    			&&insuranceDetailsQuestionImpl.q2.toString.length>5
-    				&&insuranceDetailsQuestionImpl.q3.toString.length<5)
-    		return " (Insurance Cost : "+insuranceDetailsQuestionImpl.answer1.toString+") (Insurance clauses : "+insuranceDetailsQuestionImpl.answer2.toString+")\r\n"
-    	//Si solo la 1 y la 3 estan contestadas
-    	 else if(insuranceDetailsQuestionImpl.q1.toString.length>5
-    			&&insuranceDetailsQuestionImpl.q2.toString.length<5
-    				&&insuranceDetailsQuestionImpl.q3.toString.length>5)
-    		return " (Insurance Cost : "+insuranceDetailsQuestionImpl.answer1.toString+") (Refund  : "+insuranceDetailsQuestionImpl.answer3.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin3.literal+")\r\n"
-    	//Si solo la 2 y la 3 estan contestadas
-    	 else if(insuranceDetailsQuestionImpl.q1.toString.length>5
-    			&&insuranceDetailsQuestionImpl.q2.toString.length<5
-    				&&insuranceDetailsQuestionImpl.q3.toString.length>5)
-    		return "(Insurance clauses : "+insuranceDetailsQuestionImpl.answer2.toString") (Refund  : "+insuranceDetailsQuestionImpl.answer3.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin3.literal+")\r\n"
-    			
-
-        
+    	var s=""
+		if(insuranceDetailsQuestionImpl.q1.toString.length>5 )
+	    	s+="(Insurance Cost : "+insuranceDetailsQuestionImpl.answer1.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin1.literal+")"
+	    if(insuranceDetailsQuestionImpl.q2.toString.length>5)
+	    	s+=" (Insurance clauses : "+insuranceDetailsQuestionImpl.answer2.toString+")"
+	    if(insuranceDetailsQuestionImpl.q3.toString.length>5)
+	    	s+="(Refund  : "+insuranceDetailsQuestionImpl.answer3.toString+" "+insuranceDetailsQuestionImpl.answerUnitCoin3.literal+")"
+		 s.toString	     
     }
     
     //5.2=>5.2.1
     def text(ReturnsOrCancellationsQuestionImpl returnsOrCancellationsQuestionImpl){
          var s="Returns & Cancellations Question : " + returnsOrCancellationsQuestionImpl.name+ " -> " + returnsOrCancellationsQuestionImpl.answer.toString
-         if(returnsOrCancellationsQuestionImpl.subsentence != null && returnsOrCancellationsQuestionImpl.subsentence.name.toString.length>5 )
+         if(returnsOrCancellationsQuestionImpl.subsentence !== null && returnsOrCancellationsQuestionImpl.subsentence.name.toString.length>5 )
 	    	s+=" (Management: "+returnsOrCancellationsQuestionImpl.subsentence.answer.toString+")"
 	   	s.toString
     }
@@ -288,17 +231,27 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
     //6.2=>6.2.1  ,6.2.2
 	def text(ProductQualityQuestionImpl productQualityQuestionImpl){
          var s="Product Quality Question : " + productQualityQuestionImpl.name+ " -> " + productQualityQuestionImpl.answer.toString
-         if(productQualityQuestionImpl.expectedQuality != null){
+         if(productQualityQuestionImpl.expectedQuality !== null){
 	    		s+="\n (Insurance Cost : "+productQualityQuestionImpl.expectedQuality.answer1.toString+") (Insurance clauses : "+productQualityQuestionImpl.expectedQuality.answer2.toString+")\r\n"
 	    	
          }
          s.toString
         
     }   
+    def text(ExpectedQualityQuestionImpl expectedQualityQuestionImpl){
+    	var s=""
+    	if(expectedQualityQuestionImpl.q1.toString.length>5 )
+	    	s+="(How would be determined  : "+expectedQualityQuestionImpl.answer1.toString+")"
+	    if(expectedQualityQuestionImpl.q2.toString.length>5)
+	    	s+=" (Consequences : "+expectedQualityQuestionImpl.answer2.toString+")"
+	   
+    	
+    	s.toString
+    }
     //6.3=>6.3.1
     def text(InternationalSealQuestionImpl internationalSealQuestionImpl){
         var s="International Seal Question : " + internationalSealQuestionImpl.name+ " -> " + internationalSealQuestionImpl.answer.toString
-        if(internationalSealQuestionImpl.subsentence != null && internationalSealQuestionImpl.subsentence.name.toString.length>5 )
+        if(internationalSealQuestionImpl.subsentence !== null && internationalSealQuestionImpl.subsentence.name.toString.length>5 )
 	    	s+=" (Seal Name: "+internationalSealQuestionImpl.subsentence.answer.toString+")"
 	   	s.toString
     }      
@@ -306,7 +259,7 @@ class SmaCQALabelProvider extends DefaultEObjectLabelProvider {
     //6.4=>6.4.1
     def text(HealthInspectionQuestionImpl healthInspectionQuestionImpl){
         var s="Health Inspection Question : " + healthInspectionQuestionImpl.name+ " -> " + healthInspectionQuestionImpl.answer.toString
-        if(healthInspectionQuestionImpl.subsentence != null && healthInspectionQuestionImpl.subsentence.name.toString.length>5 )
+        if(healthInspectionQuestionImpl.subsentence !== null && healthInspectionQuestionImpl.subsentence.name.toString.length>5 )
 	    	s+=" (Result: "+healthInspectionQuestionImpl.subsentence.answer.toString+")"
 	   	s.toString
     }      

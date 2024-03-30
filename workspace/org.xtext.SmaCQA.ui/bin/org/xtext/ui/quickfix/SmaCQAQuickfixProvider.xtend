@@ -15,6 +15,33 @@ import org.eclipse.xtext.ui.editor.quickfix.IssueResolutionAcceptor
  * See https://www.eclipse.org/Xtext/documentation/310_eclipse_support.html#quick-fixes
  */
 class SmaCQAQuickfixProvider extends DefaultQuickfixProvider {
+	//SmaCQA+ quickfix methods
+	
+	@Fix(SmaCQAValidator.INVALID_RATE)
+	def changeRate(Issue issue, IssueResolutionAcceptor acceptor) {
+		acceptor.accept(issue, 'Establish a minimum number unit', 'Establish a minimum number unit.', 'upcase.png') [
+			context |
+			val xtextDocument = context.xtextDocument
+			xtextDocument.replace(issue.offset, 1, "1")
+		]
+	}
+	@Fix(SmaCQAValidator.INVALID_TRACKING_NUMBER)
+	def changeTrackingNumber(Issue issue, IssueResolutionAcceptor acceptor) {
+		acceptor.accept(issue, 'Establish a 7 digits tracking number.', 'Establish a 7 digits tracking number.', 'upcase.png') [
+			context |
+			val xtextDocument = context.xtextDocument
+			val newText="5436793"
+			xtextDocument.replace(issue.offset, 1, newText)
+		]
+	}
+	@Fix(SmaCQAValidator.INVALID_AGE)
+	def changeAge(Issue issue, IssueResolutionAcceptor acceptor) {
+		acceptor.accept(issue, 'Establish a valid age between 16 and 110.', 'Establish a valid age between 16 and 110.', 'upcase.png') [
+			context |
+			val xtextDocument = context.xtextDocument
+			xtextDocument.replace(issue.offset, 1, "18")
+		]
+	}
 
 	@Fix(SmaCQAValidator.INVALID_NAME)
 	def capitalizeName(Issue issue, IssueResolutionAcceptor acceptor) {
@@ -25,15 +52,7 @@ class SmaCQAQuickfixProvider extends DefaultQuickfixProvider {
 			xtextDocument.replace(issue.offset, 1, firstLetter.toUpperCase)
 		]
 	}
-	
-	@Fix(SmaCQAValidator.INVALID_RATE)
-	def changeRate(Issue issue, IssueResolutionAcceptor acceptor) {
-		acceptor.accept(issue, 'Establish a minimum number unit', 'Establish a minimum number unit.', 'upcase.png') [
-			context |
-			val xtextDocument = context.xtextDocument
-			xtextDocument.replace(issue.offset, 1, "1")
-		]
-	}	
+		
 	@Fix(SmaCQAValidator.INVALID_NUMBER)
 	def changeUnit(Issue issue, IssueResolutionAcceptor acceptor) {
 		acceptor.accept(issue, 'Establish a minimum number unit', 'Establish a minimum number unit.', 'upcase.png') [

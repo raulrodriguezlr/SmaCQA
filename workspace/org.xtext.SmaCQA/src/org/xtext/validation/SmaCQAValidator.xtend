@@ -40,7 +40,6 @@ class SmaCQAValidator extends AbstractSmaCQAValidator {
 	
 	public static val INVALID_RESPONSE_AGE = 'invalidResponseaAge'
 	public static val INVALID_NAME = 'invalidName'
-	public static val INVALID_RATE = 'invalidRate'
 	public static val INVALID_MODEL_VALUE_EXCHANGES = 'invalidModelValueExchanges'
 	public static val LEGAL_QUESTION = 'legalQuestion'
 	public static val AGE_QUESTION = "ageQuestion"
@@ -50,45 +49,27 @@ class SmaCQAValidator extends AbstractSmaCQAValidator {
 	public static val TOKEN_NAME_QUESTION = "token_name_Question"
 	public static val TOKEN_SYMBOL_QUESTION = "token_symbol_Question"
 	public static val INVALID_DATA_REGISTER = "data_register"
+	public static val INVALID_AGE="invalid_age"
+	//SmaCQA+
+	public static val INVALID_RATE = 'invalidRate'
+	public static val INVALID_TRACKING_NUMBER ="invalidTrackingNumber"
 
-		//INICIO DE LOS METODOS relacionados con SmaCQA+
+	//SmaCQA+ validation methods
 	@Check//3.3  3.4  3.5  3.6
 	def checkAnswerShipmentCostResponsibilityQuestion(ShipmentCostResponsibilityQuestionImpl costResponsability){
-		
-		
 		if(costResponsability.getQ2.equals("3.3 What is the freight rate?"))
             if(costResponsability.getAnswer2<1){
-            error('The answer must be a valid freight rate cost(>0)', 
-                        SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER2,
-                        INVALID_RATE)
+            error('The answer must be a valid freight rate cost(>0)',  SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER2, INVALID_RATE)
             }
         if(costResponsability.getQ3.equals("3.4 What is the loading fee (on the ship)?"))
-            if(costResponsability.getAnswer3<1){
-                error('The answer must be a valid loading fee rate(>0) ', 
-                        SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER3,
-                        INVALID_RATE)
+            if(costResponsability.getAnswer3<1){error('The answer must be a valid loading fee rate(>0) ', SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER3,INVALID_RATE)
             }
-        
 	    if(costResponsability.getQ4.equals("3.5 What is the unloading fee?"))
-            if(costResponsability.getAnswer4<1){
-                error('The answer must be a valid loading fee rate(>0) ', 
-                        SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER4,
-                        INVALID_RATE)
+            if(costResponsability.getAnswer4<1){error('The answer must be a valid loading fee rate(>0) ', SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER4,INVALID_RATE)
             }
-
         if(costResponsability.getQ5.equals("3.6 What is the transport rate?"))
-		    if(costResponsability.getAnswer5<1){
-			    error('The answer must be a valid loading fee rate(>0) ', 
-				    	SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER5,
-					    INVALID_RATE)
+		    if(costResponsability.getAnswer5<1){error('The answer must be a valid loading fee rate(>0) ', SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER5,INVALID_RATE)
 		    }
-            //if(!costReponsability.answerUnitCoinFreightRate.equals("ether")||(!costReponsability.answerUnitCoinFreightRate.equals("wei"))
-			//					||(!costReponsability.answerUnitCoinFreightRate.equals(pwei))||(!costReponsability.answerUnitCoinFreightRate.equals("gwei"))
-				//					||(!costReponsability.answerUnitCoinFreightRate.equals("szabo"))){
-			//error('The answer must be a valid unit coin =>{ether, wei,pwei,gwei,szabo}', 
-				//	SmaCQAPackage.Literals.SHIPMENT_COST_RESPONSIBILITY_QUESTION__ANSWER_UNIT_COIN_FREIGHT_RATE,
-				//	INVALID_RATE)						
-						//			}
 	}
 
     @Check//4.4.1
@@ -102,15 +83,11 @@ class SmaCQAValidator extends AbstractSmaCQAValidator {
 
     @Check//4.8
 	def checkAnswerShipmentTrackingNumberQuestion(ShipmentTrackingNumberQuestionImpl trackingNumberQuestion) {
-        if(trackingNumberQuestion.getAnswer<1){
-            error('The Tracking number  can not be lower tan 1', 
-                SmaCQAPackage.Literals.SHIPMENT_TRACKING_NUMBER_QUESTION__ANSWER,
-                INVALID_RATE)
-        }
-        if(trackingNumberQuestion.getAnswer.toString.length<4){
+    
+        if(trackingNumberQuestion.getAnswer.toString.length<7){
             warning('The Tracking number may be too short to be a valid tracking number, consider check it', 
                 SmaCQAPackage.Literals.SHIPMENT_TRACKING_NUMBER_QUESTION__ANSWER,
-                INVALID_RATE)
+                INVALID_TRACKING_NUMBER)
         }
     }
 	
@@ -126,17 +103,17 @@ class SmaCQAValidator extends AbstractSmaCQAValidator {
     @Check//4.13
 	def checkAnswerCargoDimensionsQuestion(CargoDimensionsQuestionImpl cargoDimensionsQuestion) {
         if(cargoDimensionsQuestion.getLength<1){
-            error('The length must be a valid number  (>0), if not, consider skip this question ', 
+            error('The length must be a valid number (>0), if not, consider skip this question ', 
                 SmaCQAPackage.Literals.CARGO_DIMENSIONS_QUESTION__LENGTH,
                 INVALID_NUMBER)
         }
         if(cargoDimensionsQuestion.getWidth<1){
-            error('The width must be a valid number  (>0), if not, consider skip this question ', 
+            error('The width must be a valid number (>0), if not, consider skip this question ', 
                 SmaCQAPackage.Literals.CARGO_DIMENSIONS_QUESTION__WIDTH,
                 INVALID_NUMBER)
         }
-        if(cargoDimensionsQuestion.getWidth<1){
-            warning('The should must be a valid number  (>0)', 
+        if(cargoDimensionsQuestion.getDepth<1){
+            warning('The depth should must be a valid number (>0)', 
                 SmaCQAPackage.Literals.CARGO_DIMENSIONS_QUESTION__DEPTH,
                 INVALID_NUMBER)
         }
@@ -155,13 +132,13 @@ class SmaCQAValidator extends AbstractSmaCQAValidator {
     def checkInsuranceDetailsQuestion(InsuranceDetailsQuestionImpl insuranceDetailsQuestion) {
         if(insuranceDetailsQuestion.getQ1.equals("5.1.1 What is the cost of insurance (per unit asset)?"))
             if(insuranceDetailsQuestion.getAnswer1<1){
-                error('The  cost of insurance must be valid (>0), if not, consider skip this question', 
+                error('The cost of insurance must be valid (>0), if not, consider skip this question', 
                     SmaCQAPackage.Literals.INSURANCE_DETAILS_QUESTION__ANSWER1,
                     INVALID_NUMBER)
             }
         if(insuranceDetailsQuestion.getQ3.equals("5.1.3 How much would be the refund paid in case of loss or cargo delivered in poor condition?"))
             if(insuranceDetailsQuestion.getAnswer3<1){
-                error('The the refund must be valid number (>0), if not, consider skip this question', 
+                error('The refund must be valid number (>0), if not, consider skip this question', 
                     SmaCQAPackage.Literals.INSURANCE_DETAILS_QUESTION__ANSWER1,
                     INVALID_NUMBER)
             }
@@ -181,12 +158,12 @@ class SmaCQAValidator extends AbstractSmaCQAValidator {
 		if (isNumeric(ageQuestion.answer.toString) == false) {
 			error('The answer must be a number to represent the age of the actor carrying out the value exchange.', 
 					SmaCQAPackage.Literals.AGE_QUESTION__ANSWER,
-					INVALID_NUMBER)
+					INVALID_AGE)
 		}
 		if (ageQuestion.answer <= 16 || ageQuestion.answer >= 110) {
 			error('The answer must be a valid age between 16 and 110', 
 					SmaCQAPackage.Literals.AGE_QUESTION__ANSWER,
-					INVALID_NUMBER)
+					INVALID_AGE)
 		}
 	}
 	
