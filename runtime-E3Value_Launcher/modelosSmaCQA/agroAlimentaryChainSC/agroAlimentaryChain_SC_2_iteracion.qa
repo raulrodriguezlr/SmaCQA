@@ -17,8 +17,24 @@ The exchange of value in which Farmer sends/grants Carrier the following object 
 ================= Value Exchange ======================= 
 The exchange of value in which Carrier sends/grants Farmer the following object of value PackingSlip has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
-1.3 Can the value exchange be repeated over time? answer = yes
-1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.3 Can the value exchange be repeated over time? answer = no
+1.4 Are the same conditions always maintained when exchanging value?answer = no
+1.5 If the object of value traded on the value exchange is a digital token. What are the properties of said token?
+Data Declaration Non Fungible Token ERC721: 
+Token ERC721 name: PackingSlip
+Token ERC721 Symbol: PKS
+1.5.1 If it's possible to mint more than one NFT at a time?answer = no
+1.5.2 Is it possible to remove/disable the token from circulation (burn token)?answer = yes
+1.5.3 What is the price of this token? answer = 1 gwei
+1.5.4 Is necessary attach metadata (Information about the token, example: url image) to the token?answer = yes
+1.5.5 Which data or properties are requiered for the NFT information?
+Data Declaration: 
+Data name: signed Value: TrueOrFalse
+Data name: date Value: Text
+Data name: signer Value: Text
+End Data Declaration
+1.5.6 If it's possible to define an amount to restrict the amount of NFTs that are minted. What is the maximum amount? total supply = 1
+End Data Declaration Token ERC721
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -72,8 +88,24 @@ The exchange of value in which Buyer sends/grants Carrier the following object o
 ================= Value Exchange ======================= 
 The exchange of value in which Buyer sends/grants Carrier the following object of value PackingSlip has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
-1.3 Can the value exchange be repeated over time? answer = yes
-1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.3 Can the value exchange be repeated over time? answer = no
+1.4 Are the same conditions always maintained when exchanging value?answer = no
+1.5 If the object of value traded on the value exchange is a digital token. What are the properties of said token?
+Data Declaration Non Fungible Token ERC721: 
+Token ERC721 name: PackingSlip
+Token ERC721 Symbol: PKS
+1.5.1 If it's possible to mint more than one NFT at a time?answer = no
+1.5.2 Is it possible to remove/disable the token from circulation (burn token)?answer = yes
+1.5.3 What is the price of this token? answer = 1 gwei
+1.5.4 Is necessary attach metadata (Information about the token, example: url image) to the token?answer = yes
+1.5.5 Which data or properties are requiered for the NFT information?
+Data Declaration: 
+Data name: signed Value: TrueOrFalse
+Data name: date Value: Text
+Data name: signer Value: Text
+End Data Declaration
+1.5.6 If it's possible to define an amount to restrict the amount of NFTs that are minted. What is the maximum amount? total supply = 1
+End Data Declaration Token ERC721
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -165,13 +197,23 @@ The exchange of value in which DecentralizedPlatform sends/grants Buyer the foll
 --------- 1.Data Questions: -----------
 1.2 If the exchange of value could only take place after a certain time. What would this be?(indicated in minutes,days,weeks or years)answer = 1 unitTime = days
 1.3 Can the value exchange be repeated over time? answer = no
-1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+1.5 If the object of value traded on the value exchange is a digital token. What are the properties of said token?
+Data Declaration Non Fungible Token ERC721: 
+Token ERC721 name: DigitalTile
+Token ERC721 Symbol: DGT
+1.5.1 If it's possible to mint more than one NFT at a time?answer = no
+1.5.2 Is it possible to remove/disable the token from circulation (burn token)?answer = yes
+1.5.3 What is the price of this token?answer = 2000 gwei
+1.5.4 Is necessary attach metadata (Information about the token, example: url image) to the token?answer = yes
+1.5.5 Which data or properties are requiered for the NFT information?
 Data Declaration: 
 Data name: GrainOwnership Value: Text
 Data name: ID Value: Text
 Data name: Amount Value: Number
 Data name: Tradeable Value: TrueOrFalse
 End Data Declaration
+1.5.6 If it's possible to define an amount to restrict the amount of NFTs that are minted. What is the maximum amount?total supply = 1
+End Data Declaration Token ERC721
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -196,6 +238,14 @@ The exchange of value in which IoTPlatform sends/grants DecentralizedPlatform th
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -206,6 +256,14 @@ The exchange of value in which IoTPlatform sends/grants WareHouse the following 
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -216,6 +274,14 @@ The exchange of value in which IoTPlatform sends/grants Carrier the following ob
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -226,6 +292,14 @@ The exchange of value in which IoTPlatform sends/grants Buyer the following obje
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -246,8 +320,24 @@ The exchange of value in which Carrier sends/grants WareHouse the following obje
 ================= Value Exchange ======================= 
 The exchange of value in which WareHouse sends/grants Carrier the following object of value PackingSlip has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
-1.3 Can the value exchange be repeated over time? answer = yes
-1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.3 Can the value exchange be repeated over time? answer = no
+1.4 Are the same conditions always maintained when exchanging value?answer = no
+1.5 If the object of value traded on the value exchange is a digital token. What are the properties of said token?
+Data Declaration Non Fungible Token ERC721: 
+Token ERC721 name: PackingSlip
+Token ERC721 Symbol: PKS
+1.5.1 If it's possible to mint more than one NFT at a time?answer = no
+1.5.2 Is it possible to remove/disable the token from circulation (burn token)?answer = yes
+1.5.3 What is the price of this token? answer = 1 gwei
+1.5.4 Is necessary attach metadata (Information about the token, example: url image) to the token?answer = yes
+1.5.5 Which data or properties are requiered for the NFT information?
+Data Declaration: 
+Data name: signed Value: TrueOrFalse
+Data name: date Value: Text
+Data name: signer Value: Text
+End Data Declaration
+1.5.6 If it's possible to define an amount to restrict the amount of NFTs that are minted. What is the maximum amount? total supply = 1
+End Data Declaration Token ERC721
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -268,8 +358,24 @@ The exchange of value in which WareHouse sends/grants Carrier the following obje
 ================= Value Exchange ======================= 
 The exchange of value in which Carrier sends/grants WareHouse the following object of value PackingSlip has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
-1.3 Can the value exchange be repeated over time? answer = yes
-1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.3 Can the value exchange be repeated over time? answer = no
+1.4 Are the same conditions always maintained when exchanging value?answer = no
+1.5 If the object of value traded on the value exchange is a digital token. What are the properties of said token?
+Data Declaration Non Fungible Token ERC721: 
+Token ERC721 name: PackingSlip
+Token ERC721 Symbol: PKS
+1.5.1 If it's possible to mint more than one NFT at a time?answer = no
+1.5.2 Is it possible to remove/disable the token from circulation (burn token)?answer = yes
+1.5.3 What is the price of this token? answer = 1 gwei
+1.5.4 Is necessary attach metadata (Information about the token, example: url image) to the token?answer = yes
+1.5.5 Which data or properties are requiered for the NFT information?
+Data Declaration: 
+Data name: signed Value: TrueOrFalse
+Data name: date Value: Text
+Data name: signer Value: Text
+End Data Declaration
+1.5.6 If it's possible to define an amount to restrict the amount of NFTs that are minted. What is the maximum amount? total supply = 1
+End Data Declaration Token ERC721
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------

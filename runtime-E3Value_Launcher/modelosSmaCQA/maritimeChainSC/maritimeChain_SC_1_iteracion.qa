@@ -2,6 +2,8 @@
 The exchange of value in which Client sends/grants ShipOwner the following object of value Cargo has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time?answer = no
+1.4 Are the same conditions always maintained when exchanging value?answer = yes
+
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange?answer = 18
 --------- 3.Economy Questions: -----------
@@ -21,6 +23,7 @@ The exchange of value in which Client sends/grants DecentralizedPlatform the fol
 --------- 3.Economy Questions: -----------
 3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
 ================= Completion of the question process for this value exchange =================
+
 ================= Value Exchange ======================= 
 The exchange of value in which Client sends/grants DecentralizedPlatform the following object of value information has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
@@ -31,11 +34,29 @@ The exchange of value in which Client sends/grants DecentralizedPlatform the fol
 --------- 3.Economy Questions: -----------
 3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
 ================= Completion of the question process for this value exchange =================
+
+
 ================= Value Exchange ======================= 
 The exchange of value in which DecentralizedPlatform sends/grants Client the following object of value Receipt has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
-1.3 Can the value exchange be repeated over time? answer = yes
-1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.3 Can the value exchange be repeated over time? answer = no
+1.4 Are the same conditions always maintained when exchanging value?answer = no
+1.5 If the object of value traded on the value exchange is a digital token. What are the properties of said token?
+Data Declaration Non Fungible Token ERC721: 
+Token ERC721 name: RECEIPT
+Token ERC721 Symbol: RCPT
+1.5.1 If it's possible to mint more than one NFT at a time?answer = no
+1.5.2 Is it possible to remove/disable the token from circulation (burn token)?answer = yes
+1.5.3 What is the price of this token? answer = 1 gwei
+1.5.4 Is necessary attach metadata (Information about the token, example: url image) to the token?answer = yes
+1.5.5 Which data or properties are requiered for the NFT information?
+Data Declaration: 
+Data name: signed Value: TrueOrFalse
+Data name: date Value: Text
+Data name: signer Value: Text
+End Data Declaration
+1.5.6 If it's possible to define an amount to restrict the amount of NFTs that are minted. What is the maximum amount? total supply = 1
+End Data Declaration Token ERC721
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -55,11 +76,18 @@ The exchange of value in which DecentralizedPlatform sends/grants FreightForward
 --------- 3.Economy Questions: -----------
 3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
 ================= Completion of the question process for this value exchange =================
+
 ================= Value Exchange ======================= 
 The exchange of value in which FreightForwarders sends/grants DecentralizedPlatform the following object of value Surveillance has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: loaded Value: TrueOrFalse
+Data name: date Value: Text
+Data name: signer Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -79,6 +107,7 @@ The exchange of value in which DecentralizedPlatform sends/grants ShipOwner the 
 --------- 3.Economy Questions: -----------
 3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
 ================= Completion of the question process for this value exchange =================
+
 ================= Value Exchange ======================= 
 The exchange of value in which ShipOwner sends/grants DecentralizedPlatform the following object of value Information has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
@@ -96,6 +125,14 @@ The exchange of value in which IoTDevices sends/grants Client the following obje
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -106,6 +143,14 @@ The exchange of value in which IoTDevices sends/grants FreightForwarders the fol
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -116,6 +161,14 @@ The exchange of value in which IoTDevices sends/grants ShipOwner the following o
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -126,6 +179,14 @@ The exchange of value in which IoTDevices sends/grants Customs the following obj
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
+1.5 If the object of value negotiated in the value exchange is a tangible entity that can be represented as a digital entity (not a token). What are the properties of that object?
+Data Declaration: 
+Data name: lozalization Value: Text
+Data name: encrypted Value: TrueOrFalse
+Data name: email Value: Text
+Data name: updatesPerDay Value: Number
+Data name: ID Value: Text
+End Data Declaration
 --------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange? answer = 18 
 --------- 3.Economy Questions: -----------
@@ -134,7 +195,7 @@ The exchange of value in which IoTDevices sends/grants Customs the following obj
 
 
 ================= Value Exchange ======================= 
-The exchange of value in whichShipOwner sends/grants Customs the following object of value Money has the following associated questions and answers: 
+The exchange of value in which ShipOwner sends/grants Customs the following object of value Money has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
 1.3 Can the value exchange be repeated over time? answer = yes
 1.4 Are the same conditions always maintained when exchanging value?answer = yes
@@ -145,12 +206,28 @@ The exchange of value in whichShipOwner sends/grants Customs the following objec
 --------- 3.Economy Questions: -----------
 3.1 Which would be the minimum amount if necessary in this exchange? answer = 1
 ================= Completion of the question process for this value exchange =================
+
 ================= Value Exchange ======================= 
 The exchange of value in which Customs sends/grants ShipOwner the following object of value Invoice has the following associated questions and answers: 
 --------- 1.Data Questions: -----------
-1.3 Can the value exchange be repeated over time?answer = yes
-1.4 Are the same conditions always maintained when exchanging value?answer = yes
---------- 2.Legal Questions: -----------
+1.3 Can the value exchange be repeated over time?answer = no
+1.4 Are the same conditions always maintained when exchanging value?answer = no
+1.5 If the object of value traded on the value exchange is a digital token. What are the properties of said token?
+Data Declaration Non Fungible Token ERC721: 
+Token ERC721 name: INVOICE
+Token ERC721 Symbol: INV
+1.5.1 If it's possible to mint more than one NFT at a time?answer = no
+1.5.2 Is it possible to remove/disable the token from circulation (burn token)?answer = yes
+1.5.3 What is the price of this token? answer = 200 gwei
+1.5.4 Is necessary attach metadata (Information about the token, example: url image) to the token?answer = yes
+1.5.5 Which data or properties are requiered for the NFT information?
+Data Declaration: 
+Data name: payment Value: TrueOrFalse
+Data name: date Value: Text
+Data name: debtor Value: Text
+End Data Declaration
+1.5.6 If it's possible to define an amount to restrict the amount of NFTs that are minted. What is the maximum amount? total supply = 1
+End Data Declaration Token ERC721--------- 2.Legal Questions: -----------
 2.1  What would be the minimum legal age if necessary in this exchange?answer = 18 
 --------- 3.Economy Questions: -----------
 3.1 Which would be the minimum amount if necessary in this exchange? answer = 1

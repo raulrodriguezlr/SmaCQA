@@ -28,6 +28,7 @@ import org.xtext.smaCQA.*
  * 
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#code-generation
  */
+ 
 class HTMLGenerator extends AbstractGenerator {
 		
 		Date date = new Date();
@@ -50,6 +51,7 @@ class HTMLGenerator extends AbstractGenerator {
   		 * Descripción: Define una plantilla para generar en base a la información recogida del modelo una tabla HTML
   		 * Parámetro de salida: Ninguno
   		 */
+  		 @SuppressWarnings("all")
 		def toHTML(Model file,String nameFile){
 		'''	
 		<html>	
@@ -326,7 +328,7 @@ class HTMLGenerator extends AbstractGenerator {
 			«ENDIF»
 		'''	
 		}
-	
+		@SuppressWarnings("Inconsistent indentation")
 		def shipmentQuestion(ValueExchange valueExchange){
 		'''
 		    «IF valueExchange.shipmentQuestion != null»
@@ -456,34 +458,34 @@ class HTMLGenerator extends AbstractGenerator {
 		                <td>«valueExchange.shipmentQuestion.seaShipment.answer»</td>
 		            </tr>
 		            «IF valueExchange.shipmentQuestion.seaShipment.maritime != null»										
-		            	<tr>
+							<tr>
 							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.q1»</td>
 							<td>  "Shipment"</td>
 							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.answer1»</td>
-						 </tr>
-						 <tr>
-   							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.q2»</td>
-   							<td>  "Shipment"</td>
-   							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.answer2»</td>
-   						 </tr>
+							</tr>
+							<tr>
+							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.q2»</td>
+							<td>  "Shipment"</td>
+							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.answer2»</td>
+							</tr>
 						  «IF valueExchange.shipmentQuestion.seaShipment.maritime.q3 != null»	
-						  	<tr>
+								<tr>	
 								<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.q3»</td>
 								<td>  "Shipment"</td>
 								<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.answer3»</td>
-							 </tr>		
+								</tr>		
 						  «ENDIF»
-  						 <tr>
-   							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.q4»</td>
-   							<td>  "Shipment"</td>
-   							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.answer4»</td>
-   						 </tr>
+							<tr>
+							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.q4»</td>
+							<td	>  "Shipment"</td>
+							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.answer4»</td>
+							</tr>
    						  «IF valueExchange.shipmentQuestion.seaShipment.maritime.subSentence != null»										
-	 		            	<tr>
+	 							<tr>
 	 							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.subSentence.name»</td>
 	 							<td>  "Shipment"</td>
 	 							<td>  «valueExchange.shipmentQuestion.seaShipment.maritime.subSentence.answerSubSentence»«valueExchange.shipmentQuestion.seaShipment.maritime.subSentence.answerUnitTime»</td>
-	 						 </tr>
+	 							</tr>
 		 				  «ENDIF»
 					«ENDIF»
 		        «ENDIF»	
